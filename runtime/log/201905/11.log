@@ -1,0 +1,1915 @@
+---------------------------------------------------------------
+[ 2019-05-11T10:13:03+08:00 ] 47.92.151.67 GET pml.zhihuo.com.cn/
+[运行时间：0.078862s] [吞吐率：12.68req/s] [内存消耗：2,718.44kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001064s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'pml.zhihuo.com.cn',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001415s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T13:19:49+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/user/get_userinfo
+[运行时间：0.060304s] [吞吐率：16.58req/s] [内存消耗：3,265.02kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000881s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001355s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->get_userinfo[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006414s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004969s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004681s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004303s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004127s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:19:50+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/consume_money
+[运行时间：0.113830s] [吞吐率：8.79req/s] [内存消耗：3,270.95kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001164s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'consume_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001971s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->consume_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005057s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.002899s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.002378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004148s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.002477s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.002646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.003205s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" ) [ RunTime:0.002876s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:19:50+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/usable_money
+[运行时间：0.136926s] [吞吐率：7.30req/s] [内存消耗：3,282.40kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001139s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'usable_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.019752s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->usable_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006174s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004879s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005472s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.005782s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004176s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  (  id="19" ) LIMIT 1 [ RunTime:0.004251s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:19:50+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/freeze_money
+[运行时间：0.152493s] [吞吐率：6.56req/s] [内存消耗：3,283.02kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001181s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'freeze_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001904s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->freeze_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028545s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.003851s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004063s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003273s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003097s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.004089s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  (  user_id="19" and status="1" ) [ RunTime:0.028275s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:19:50+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/aggregate_money
+[运行时间：0.169104s] [吞吐率：5.91req/s] [内存消耗：3,284.45kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000846s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'aggregate_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001402s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->aggregate_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016300s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.003394s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.003849s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003701s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.002898s ]
+[ sql ] [ SQL ] SELECT `money` FROM `pml_user` WHERE  (  id="19" ) LIMIT 1 [ RunTime:0.002983s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.003815s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  (  user_id="19" and status="1" ) [ RunTime:0.026006s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:19:50+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/key_number
+[运行时间：0.136456s] [吞吐率：7.33req/s] [内存消耗：3,272.48kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001192s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'key_number',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001855s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->key_number[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005555s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004219s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004415s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004450s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003865s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.004293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_order` WHERE  (  user_id="19" ) LIMIT 1 [ RunTime:0.007040s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.004236s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  a.status="2" and b.user_id="19" ) LIMIT 1 [ RunTime:0.008793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  a.status="1" and b.user_id="19" ) LIMIT 1 [ RunTime:0.005651s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:19:50+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/key_percentage
+[运行时间：0.184747s] [吞吐率：5.41req/s] [内存消耗：3,271.80kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001166s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'key_percentage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001917s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->key_percentage[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026861s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004741s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005103s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004331s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003870s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.004483s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" ) [ RunTime:0.023227s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=1 ) [ RunTime:0.005848s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=2 ) [ RunTime:0.004067s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=3 ) [ RunTime:0.004059s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=4 ) [ RunTime:0.004090s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=5 ) [ RunTime:0.008102s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=6 ) [ RunTime:0.013589s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:19:50+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/reach_lastgraph
+[运行时间：0.206240s] [吞吐率：4.85req/s] [内存消耗：3,313.61kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001226s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'reach_lastgraph',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001922s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->reach_lastgraph[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006091s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004446s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004073s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004464s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004156s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004025s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.004495s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_order` WHERE  (  user_id="19" ) LIMIT 1 [ RunTime:0.003972s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.004430s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-1 00:00:00'< create_time and create_time < '2019-05-1 23:59:00' ) [ RunTime:0.004126s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-2 00:00:00'< create_time and create_time < '2019-05-2 23:59:00' ) [ RunTime:0.004191s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-3 00:00:00'< create_time and create_time < '2019-05-3 23:59:00' ) [ RunTime:0.004106s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-4 00:00:00'< create_time and create_time < '2019-05-4 23:59:00' ) [ RunTime:0.004124s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-5 00:00:00'< create_time and create_time < '2019-05-5 23:59:00' ) [ RunTime:0.004219s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-6 00:00:00'< create_time and create_time < '2019-05-6 23:59:00' ) [ RunTime:0.004099s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-7 00:00:00'< create_time and create_time < '2019-05-7 23:59:00' ) [ RunTime:0.004151s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-8 00:00:00'< create_time and create_time < '2019-05-8 23:59:00' ) [ RunTime:0.004120s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-9 00:00:00'< create_time and create_time < '2019-05-9 23:59:00' ) [ RunTime:0.004128s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-10 00:00:00'< create_time and create_time < '2019-05-10 23:59:00' ) [ RunTime:0.004097s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-11 00:00:00'< create_time and create_time < '2019-05-11 23:59:00' ) [ RunTime:0.004143s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-12 00:00:00'< create_time and create_time < '2019-05-12 23:59:00' ) [ RunTime:0.004132s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-13 00:00:00'< create_time and create_time < '2019-05-13 23:59:00' ) [ RunTime:0.004155s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-14 00:00:00'< create_time and create_time < '2019-05-14 23:59:00' ) [ RunTime:0.004114s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-15 00:00:00'< create_time and create_time < '2019-05-15 23:59:00' ) [ RunTime:0.004094s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-16 00:00:00'< create_time and create_time < '2019-05-16 23:59:00' ) [ RunTime:0.004165s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-17 00:00:00'< create_time and create_time < '2019-05-17 23:59:00' ) [ RunTime:0.004145s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-18 00:00:00'< create_time and create_time < '2019-05-18 23:59:00' ) [ RunTime:0.004090s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-19 00:00:00'< create_time and create_time < '2019-05-19 23:59:00' ) [ RunTime:0.004082s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-20 00:00:00'< create_time and create_time < '2019-05-20 23:59:00' ) [ RunTime:0.004151s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-21 00:00:00'< create_time and create_time < '2019-05-21 23:59:00' ) [ RunTime:0.004148s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-22 00:00:00'< create_time and create_time < '2019-05-22 23:59:00' ) [ RunTime:0.004123s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-23 00:00:00'< create_time and create_time < '2019-05-23 23:59:00' ) [ RunTime:0.004137s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-24 00:00:00'< create_time and create_time < '2019-05-24 23:59:00' ) [ RunTime:0.004097s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-25 00:00:00'< create_time and create_time < '2019-05-25 23:59:00' ) [ RunTime:0.004094s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-26 00:00:00'< create_time and create_time < '2019-05-26 23:59:00' ) [ RunTime:0.004148s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-27 00:00:00'< create_time and create_time < '2019-05-27 23:59:00' ) [ RunTime:0.004123s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-28 00:00:00'< create_time and create_time < '2019-05-28 23:59:00' ) [ RunTime:0.004122s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-29 00:00:00'< create_time and create_time < '2019-05-29 23:59:00' ) [ RunTime:0.004139s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-30 00:00:00'< create_time and create_time < '2019-05-30 23:59:00' ) [ RunTime:0.004107s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:19:50+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/reach_graph
+[运行时间：0.244631s] [吞吐率：4.09req/s] [内存消耗：3,314.38kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002259s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'reach_graph',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001896s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->reach_graph[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007291s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.005246s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004924s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005454s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004949s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.005285s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_order` WHERE  (  user_id="19" ) LIMIT 1 [ RunTime:0.004873s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.005322s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-1 00:00:00'< create_time and create_time < '2019-05-1 23:59:00' ) [ RunTime:0.004951s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-2 00:00:00'< create_time and create_time < '2019-05-2 23:59:00' ) [ RunTime:0.004957s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-3 00:00:00'< create_time and create_time < '2019-05-3 23:59:00' ) [ RunTime:0.004891s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-4 00:00:00'< create_time and create_time < '2019-05-4 23:59:00' ) [ RunTime:0.004946s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-5 00:00:00'< create_time and create_time < '2019-05-5 23:59:00' ) [ RunTime:0.004892s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-6 00:00:00'< create_time and create_time < '2019-05-6 23:59:00' ) [ RunTime:0.004913s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-7 00:00:00'< create_time and create_time < '2019-05-7 23:59:00' ) [ RunTime:0.004908s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-8 00:00:00'< create_time and create_time < '2019-05-8 23:59:00' ) [ RunTime:0.004981s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-9 00:00:00'< create_time and create_time < '2019-05-9 23:59:00' ) [ RunTime:0.004931s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-10 00:00:00'< create_time and create_time < '2019-05-10 23:59:00' ) [ RunTime:0.004885s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-11 00:00:00'< create_time and create_time < '2019-05-11 23:59:00' ) [ RunTime:0.004910s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-12 00:00:00'< create_time and create_time < '2019-05-12 23:59:00' ) [ RunTime:0.004949s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-13 00:00:00'< create_time and create_time < '2019-05-13 23:59:00' ) [ RunTime:0.004908s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-14 00:00:00'< create_time and create_time < '2019-05-14 23:59:00' ) [ RunTime:0.004898s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-15 00:00:00'< create_time and create_time < '2019-05-15 23:59:00' ) [ RunTime:0.004893s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-16 00:00:00'< create_time and create_time < '2019-05-16 23:59:00' ) [ RunTime:0.004945s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-17 00:00:00'< create_time and create_time < '2019-05-17 23:59:00' ) [ RunTime:0.004900s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-18 00:00:00'< create_time and create_time < '2019-05-18 23:59:00' ) [ RunTime:0.004906s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-19 00:00:00'< create_time and create_time < '2019-05-19 23:59:00' ) [ RunTime:0.004891s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-20 00:00:00'< create_time and create_time < '2019-05-20 23:59:00' ) [ RunTime:0.004905s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-21 00:00:00'< create_time and create_time < '2019-05-21 23:59:00' ) [ RunTime:0.004880s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-22 00:00:00'< create_time and create_time < '2019-05-22 23:59:00' ) [ RunTime:0.004911s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-23 00:00:00'< create_time and create_time < '2019-05-23 23:59:00' ) [ RunTime:0.004911s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-24 00:00:00'< create_time and create_time < '2019-05-24 23:59:00' ) [ RunTime:0.005007s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-25 00:00:00'< create_time and create_time < '2019-05-25 23:59:00' ) [ RunTime:0.004908s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-26 00:00:00'< create_time and create_time < '2019-05-26 23:59:00' ) [ RunTime:0.004917s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-27 00:00:00'< create_time and create_time < '2019-05-27 23:59:00' ) [ RunTime:0.004890s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-28 00:00:00'< create_time and create_time < '2019-05-28 23:59:00' ) [ RunTime:0.004913s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-29 00:00:00'< create_time and create_time < '2019-05-29 23:59:00' ) [ RunTime:0.004899s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-30 00:00:00'< create_time and create_time < '2019-05-30 23:59:00' ) [ RunTime:0.004903s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-31 00:00:00'< create_time and create_time < '2019-05-31 23:59:00' ) [ RunTime:0.004975s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:20:14+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/user/get_userinfo
+[运行时间：0.053055s] [吞吐率：18.85req/s] [内存消耗：3,265.02kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000910s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001265s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->get_userinfo[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006093s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004571s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004031s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004413s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004087s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003970s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:20:14+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/aggregate_money
+[运行时间：0.144574s] [吞吐率：6.92req/s] [内存消耗：3,284.45kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001138s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'aggregate_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.018983s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->aggregate_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009805s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004124s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.003829s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003524s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003706s ]
+[ sql ] [ SQL ] SELECT `money` FROM `pml_user` WHERE  (  id="19" ) LIMIT 1 [ RunTime:0.003540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.003644s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  (  user_id="19" and status="1" ) [ RunTime:0.003393s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:20:14+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/usable_money
+[运行时间：0.143092s] [吞吐率：6.99req/s] [内存消耗：3,282.40kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001253s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'usable_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001893s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->usable_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005917s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004414s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005241s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004071s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004044s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  (  id="19" ) LIMIT 1 [ RunTime:0.004134s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:20:14+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/consume_money
+[运行时间：0.114860s] [吞吐率：8.71req/s] [内存消耗：3,270.95kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001273s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'consume_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001956s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->consume_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005843s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004505s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004912s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003944s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004147s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.004388s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" ) [ RunTime:0.004199s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:20:14+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/freeze_money
+[运行时间：0.151439s] [吞吐率：6.60req/s] [内存消耗：3,283.02kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001133s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'freeze_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001985s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->freeze_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030686s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.005481s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.005216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005534s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004994s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004933s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.005344s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  (  user_id="19" and status="1" ) [ RunTime:0.004785s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:20:14+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/key_number
+[运行时间：0.151095s] [吞吐率：6.62req/s] [内存消耗：3,272.48kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001140s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'key_number',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.035403s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->key_number[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014216s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004847s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003739s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004595s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003917s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003775s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.004595s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_order` WHERE  (  user_id="19" ) LIMIT 1 [ RunTime:0.003846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006851s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  a.status="2" and b.user_id="19" ) LIMIT 1 [ RunTime:0.003752s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  a.status="1" and b.user_id="19" ) LIMIT 1 [ RunTime:0.003733s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:20:14+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/key_percentage
+[运行时间：0.185124s] [吞吐率：5.40req/s] [内存消耗：3,271.80kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001122s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'key_percentage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001870s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->key_percentage[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012890s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004868s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003171s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.003811s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004541s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.003855s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" ) [ RunTime:0.003247s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=1 ) [ RunTime:0.004709s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=2 ) [ RunTime:0.003416s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=3 ) [ RunTime:0.003132s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=4 ) [ RunTime:0.003092s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=5 ) [ RunTime:0.003088s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=6 ) [ RunTime:0.037093s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:20:14+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/reach_graph
+[运行时间：0.185989s] [吞吐率：5.38req/s] [内存消耗：3,314.38kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001226s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'reach_graph',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004228s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->reach_graph[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005283s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.005453s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.003973s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003442s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.003770s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_order` WHERE  (  user_id="19" ) LIMIT 1 [ RunTime:0.003360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.003721s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-1 00:00:00'< create_time and create_time < '2019-05-1 23:59:00' ) [ RunTime:0.003386s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-2 00:00:00'< create_time and create_time < '2019-05-2 23:59:00' ) [ RunTime:0.003451s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-3 00:00:00'< create_time and create_time < '2019-05-3 23:59:00' ) [ RunTime:0.003424s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-4 00:00:00'< create_time and create_time < '2019-05-4 23:59:00' ) [ RunTime:0.003404s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-5 00:00:00'< create_time and create_time < '2019-05-5 23:59:00' ) [ RunTime:0.003392s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-6 00:00:00'< create_time and create_time < '2019-05-6 23:59:00' ) [ RunTime:0.003391s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-7 00:00:00'< create_time and create_time < '2019-05-7 23:59:00' ) [ RunTime:0.003396s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-8 00:00:00'< create_time and create_time < '2019-05-8 23:59:00' ) [ RunTime:0.003418s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-9 00:00:00'< create_time and create_time < '2019-05-9 23:59:00' ) [ RunTime:0.003392s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-10 00:00:00'< create_time and create_time < '2019-05-10 23:59:00' ) [ RunTime:0.003386s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-11 00:00:00'< create_time and create_time < '2019-05-11 23:59:00' ) [ RunTime:0.003385s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-12 00:00:00'< create_time and create_time < '2019-05-12 23:59:00' ) [ RunTime:0.003410s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-13 00:00:00'< create_time and create_time < '2019-05-13 23:59:00' ) [ RunTime:0.003402s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-14 00:00:00'< create_time and create_time < '2019-05-14 23:59:00' ) [ RunTime:0.003387s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-15 00:00:00'< create_time and create_time < '2019-05-15 23:59:00' ) [ RunTime:0.003470s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-16 00:00:00'< create_time and create_time < '2019-05-16 23:59:00' ) [ RunTime:0.003416s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-17 00:00:00'< create_time and create_time < '2019-05-17 23:59:00' ) [ RunTime:0.003398s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-18 00:00:00'< create_time and create_time < '2019-05-18 23:59:00' ) [ RunTime:0.003395s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-19 00:00:00'< create_time and create_time < '2019-05-19 23:59:00' ) [ RunTime:0.003391s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-20 00:00:00'< create_time and create_time < '2019-05-20 23:59:00' ) [ RunTime:0.003415s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-21 00:00:00'< create_time and create_time < '2019-05-21 23:59:00' ) [ RunTime:0.003440s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-22 00:00:00'< create_time and create_time < '2019-05-22 23:59:00' ) [ RunTime:0.003451s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-23 00:00:00'< create_time and create_time < '2019-05-23 23:59:00' ) [ RunTime:0.003385s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-24 00:00:00'< create_time and create_time < '2019-05-24 23:59:00' ) [ RunTime:0.003363s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-25 00:00:00'< create_time and create_time < '2019-05-25 23:59:00' ) [ RunTime:0.003390s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-26 00:00:00'< create_time and create_time < '2019-05-26 23:59:00' ) [ RunTime:0.003404s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-27 00:00:00'< create_time and create_time < '2019-05-27 23:59:00' ) [ RunTime:0.003407s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-28 00:00:00'< create_time and create_time < '2019-05-28 23:59:00' ) [ RunTime:0.003390s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-29 00:00:00'< create_time and create_time < '2019-05-29 23:59:00' ) [ RunTime:0.003403s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-30 00:00:00'< create_time and create_time < '2019-05-30 23:59:00' ) [ RunTime:0.003393s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-31 00:00:00'< create_time and create_time < '2019-05-31 23:59:00' ) [ RunTime:0.003388s ]
+---------------------------------------------------------------
+[ 2019-05-11T13:20:14+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/reach_lastgraph
+[运行时间：0.184860s] [吞吐率：5.41req/s] [内存消耗：3,313.61kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001371s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'reach_lastgraph',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001872s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->reach_lastgraph[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005425s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004371s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004060s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003619s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.004011s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_order` WHERE  (  user_id="19" ) LIMIT 1 [ RunTime:0.003480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.003895s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-1 00:00:00'< create_time and create_time < '2019-05-1 23:59:00' ) [ RunTime:0.003572s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-2 00:00:00'< create_time and create_time < '2019-05-2 23:59:00' ) [ RunTime:0.003594s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-3 00:00:00'< create_time and create_time < '2019-05-3 23:59:00' ) [ RunTime:0.003563s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-4 00:00:00'< create_time and create_time < '2019-05-4 23:59:00' ) [ RunTime:0.003576s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-5 00:00:00'< create_time and create_time < '2019-05-5 23:59:00' ) [ RunTime:0.003539s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-6 00:00:00'< create_time and create_time < '2019-05-6 23:59:00' ) [ RunTime:0.003517s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-7 00:00:00'< create_time and create_time < '2019-05-7 23:59:00' ) [ RunTime:0.003537s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-8 00:00:00'< create_time and create_time < '2019-05-8 23:59:00' ) [ RunTime:0.003548s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-9 00:00:00'< create_time and create_time < '2019-05-9 23:59:00' ) [ RunTime:0.003571s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-10 00:00:00'< create_time and create_time < '2019-05-10 23:59:00' ) [ RunTime:0.003540s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-11 00:00:00'< create_time and create_time < '2019-05-11 23:59:00' ) [ RunTime:0.003542s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-12 00:00:00'< create_time and create_time < '2019-05-12 23:59:00' ) [ RunTime:0.003544s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-13 00:00:00'< create_time and create_time < '2019-05-13 23:59:00' ) [ RunTime:0.003535s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-14 00:00:00'< create_time and create_time < '2019-05-14 23:59:00' ) [ RunTime:0.003582s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-15 00:00:00'< create_time and create_time < '2019-05-15 23:59:00' ) [ RunTime:0.003589s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-16 00:00:00'< create_time and create_time < '2019-05-16 23:59:00' ) [ RunTime:0.003546s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-17 00:00:00'< create_time and create_time < '2019-05-17 23:59:00' ) [ RunTime:0.003542s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-18 00:00:00'< create_time and create_time < '2019-05-18 23:59:00' ) [ RunTime:0.003572s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-19 00:00:00'< create_time and create_time < '2019-05-19 23:59:00' ) [ RunTime:0.003596s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-20 00:00:00'< create_time and create_time < '2019-05-20 23:59:00' ) [ RunTime:0.003572s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-21 00:00:00'< create_time and create_time < '2019-05-21 23:59:00' ) [ RunTime:0.003612s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-22 00:00:00'< create_time and create_time < '2019-05-22 23:59:00' ) [ RunTime:0.003561s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-23 00:00:00'< create_time and create_time < '2019-05-23 23:59:00' ) [ RunTime:0.003535s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-24 00:00:00'< create_time and create_time < '2019-05-24 23:59:00' ) [ RunTime:0.003558s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-25 00:00:00'< create_time and create_time < '2019-05-25 23:59:00' ) [ RunTime:0.003584s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-26 00:00:00'< create_time and create_time < '2019-05-26 23:59:00' ) [ RunTime:0.003556s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-27 00:00:00'< create_time and create_time < '2019-05-27 23:59:00' ) [ RunTime:0.003615s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-28 00:00:00'< create_time and create_time < '2019-05-28 23:59:00' ) [ RunTime:0.003520s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-29 00:00:00'< create_time and create_time < '2019-05-29 23:59:00' ) [ RunTime:0.003517s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-30 00:00:00'< create_time and create_time < '2019-05-30 23:59:00' ) [ RunTime:0.003582s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:22+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/user/get_userinfo
+[运行时间：0.133208s] [吞吐率：7.51req/s] [内存消耗：3,265.02kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001217s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.008948s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->get_userinfo[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041294s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.012397s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005394s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004599s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004164s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:22+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/usable_money
+[运行时间：0.117135s] [吞吐率：8.54req/s] [内存消耗：3,282.40kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001215s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'usable_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003826s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->usable_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036910s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004336s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003987s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004353s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004194s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003924s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  (  id="19" ) LIMIT 1 [ RunTime:0.004727s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:22+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/freeze_money
+[运行时间：0.138863s] [吞吐率：7.20req/s] [内存消耗：3,283.02kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001129s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'freeze_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001979s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->freeze_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004534s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.003577s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003039s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004139s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003285s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.002995s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.003781s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  (  user_id="19" and status="1" ) [ RunTime:0.004237s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:22+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/consume_money
+[运行时间：0.121920s] [吞吐率：8.20req/s] [内存消耗：3,270.95kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001205s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'consume_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001885s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->consume_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004866s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.003603s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004079s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004216s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.005036s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.004547s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" ) [ RunTime:0.004402s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:22+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/key_number
+[运行时间：0.170309s] [吞吐率：5.87req/s] [内存消耗：3,272.48kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001136s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'key_number',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.013807s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->key_number[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022430s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.005297s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004795s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005769s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004970s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.005297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.010471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_order` WHERE  (  user_id="19" ) LIMIT 1 [ RunTime:0.029421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.020512s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  a.status="2" and b.user_id="19" ) LIMIT 1 [ RunTime:0.004987s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  a.status="1" and b.user_id="19" ) LIMIT 1 [ RunTime:0.004687s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:22+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/aggregate_money
+[运行时间：0.194025s] [吞吐率：5.15req/s] [内存消耗：3,284.45kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001163s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'aggregate_money',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001920s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->aggregate_money[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008503s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006734s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.005693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007908s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.006740s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.032686s ]
+[ sql ] [ SQL ] SELECT `money` FROM `pml_user` WHERE  (  id="19" ) LIMIT 1 [ RunTime:0.020266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006137s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  (  user_id="19" and status="1" ) [ RunTime:0.005685s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:22+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/key_percentage
+[运行时间：0.142679s] [吞吐率：7.01req/s] [内存消耗：3,271.80kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001165s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'key_percentage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001901s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->key_percentage[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023717s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006236s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.005812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006517s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.005904s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.005780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006158s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" ) [ RunTime:0.006064s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=1 ) [ RunTime:0.006113s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=2 ) [ RunTime:0.005993s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=3 ) [ RunTime:0.006241s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=4 ) [ RunTime:0.005986s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=5 ) [ RunTime:0.006158s ]
+[ sql ] [ SQL ] SELECT `a`.`days`,`b`.`reach_count`,`b`.`channel_name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="19" and channel_id=6 ) [ RunTime:0.006040s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:22+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/reach_lastgraph
+[运行时间：0.207893s] [吞吐率：4.81req/s] [内存消耗：3,313.61kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000914s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'reach_lastgraph',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001960s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->reach_lastgraph[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008837s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.005554s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004254s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003708s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.003577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.004104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_order` WHERE  (  user_id="19" ) LIMIT 1 [ RunTime:0.003572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.004024s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-1 00:00:00'< create_time and create_time < '2019-05-1 23:59:00' ) [ RunTime:0.003772s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-2 00:00:00'< create_time and create_time < '2019-05-2 23:59:00' ) [ RunTime:0.003783s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-3 00:00:00'< create_time and create_time < '2019-05-3 23:59:00' ) [ RunTime:0.003743s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-4 00:00:00'< create_time and create_time < '2019-05-4 23:59:00' ) [ RunTime:0.003739s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-5 00:00:00'< create_time and create_time < '2019-05-5 23:59:00' ) [ RunTime:0.003741s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-6 00:00:00'< create_time and create_time < '2019-05-6 23:59:00' ) [ RunTime:0.003732s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-7 00:00:00'< create_time and create_time < '2019-05-7 23:59:00' ) [ RunTime:0.003717s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-8 00:00:00'< create_time and create_time < '2019-05-8 23:59:00' ) [ RunTime:0.003808s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-9 00:00:00'< create_time and create_time < '2019-05-9 23:59:00' ) [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-10 00:00:00'< create_time and create_time < '2019-05-10 23:59:00' ) [ RunTime:0.003715s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-11 00:00:00'< create_time and create_time < '2019-05-11 23:59:00' ) [ RunTime:0.003747s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-12 00:00:00'< create_time and create_time < '2019-05-12 23:59:00' ) [ RunTime:0.003716s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-13 00:00:00'< create_time and create_time < '2019-05-13 23:59:00' ) [ RunTime:0.003741s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-14 00:00:00'< create_time and create_time < '2019-05-14 23:59:00' ) [ RunTime:0.003715s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-15 00:00:00'< create_time and create_time < '2019-05-15 23:59:00' ) [ RunTime:0.003705s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-16 00:00:00'< create_time and create_time < '2019-05-16 23:59:00' ) [ RunTime:0.003697s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-17 00:00:00'< create_time and create_time < '2019-05-17 23:59:00' ) [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-18 00:00:00'< create_time and create_time < '2019-05-18 23:59:00' ) [ RunTime:0.003773s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-19 00:00:00'< create_time and create_time < '2019-05-19 23:59:00' ) [ RunTime:0.003711s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-20 00:00:00'< create_time and create_time < '2019-05-20 23:59:00' ) [ RunTime:0.003751s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-21 00:00:00'< create_time and create_time < '2019-05-21 23:59:00' ) [ RunTime:0.003806s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-22 00:00:00'< create_time and create_time < '2019-05-22 23:59:00' ) [ RunTime:0.003751s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-23 00:00:00'< create_time and create_time < '2019-05-23 23:59:00' ) [ RunTime:0.003717s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-24 00:00:00'< create_time and create_time < '2019-05-24 23:59:00' ) [ RunTime:0.003728s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-25 00:00:00'< create_time and create_time < '2019-05-25 23:59:00' ) [ RunTime:0.003723s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-26 00:00:00'< create_time and create_time < '2019-05-26 23:59:00' ) [ RunTime:0.003746s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-27 00:00:00'< create_time and create_time < '2019-05-27 23:59:00' ) [ RunTime:0.003753s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-28 00:00:00'< create_time and create_time < '2019-05-28 23:59:00' ) [ RunTime:0.003709s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-29 00:00:00'< create_time and create_time < '2019-05-29 23:59:00' ) [ RunTime:0.003732s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-30 00:00:00'< create_time and create_time < '2019-05-30 23:59:00' ) [ RunTime:0.003764s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:22+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/Pandect/reach_graph
+[运行时间：0.250466s] [吞吐率：3.99req/s] [内存消耗：3,314.38kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001192s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Pandect',
+    2 => 'reach_graph',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001845s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ RUN ] app\api\controller\Pandect->reach_graph[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Pandect.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007548s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.005598s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005568s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004976s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.005346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_order` WHERE  (  user_id="19" ) LIMIT 1 [ RunTime:0.004860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.005315s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-1 00:00:00'< create_time and create_time < '2019-05-1 23:59:00' ) [ RunTime:0.004962s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-2 00:00:00'< create_time and create_time < '2019-05-2 23:59:00' ) [ RunTime:0.004933s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-3 00:00:00'< create_time and create_time < '2019-05-3 23:59:00' ) [ RunTime:0.004919s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-4 00:00:00'< create_time and create_time < '2019-05-4 23:59:00' ) [ RunTime:0.004966s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-5 00:00:00'< create_time and create_time < '2019-05-5 23:59:00' ) [ RunTime:0.004865s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-6 00:00:00'< create_time and create_time < '2019-05-6 23:59:00' ) [ RunTime:0.004913s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-7 00:00:00'< create_time and create_time < '2019-05-7 23:59:00' ) [ RunTime:0.004889s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-8 00:00:00'< create_time and create_time < '2019-05-8 23:59:00' ) [ RunTime:0.004971s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-9 00:00:00'< create_time and create_time < '2019-05-9 23:59:00' ) [ RunTime:0.004885s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-10 00:00:00'< create_time and create_time < '2019-05-10 23:59:00' ) [ RunTime:0.004892s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-11 00:00:00'< create_time and create_time < '2019-05-11 23:59:00' ) [ RunTime:0.004884s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-12 00:00:00'< create_time and create_time < '2019-05-12 23:59:00' ) [ RunTime:0.004902s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-13 00:00:00'< create_time and create_time < '2019-05-13 23:59:00' ) [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-14 00:00:00'< create_time and create_time < '2019-05-14 23:59:00' ) [ RunTime:0.004901s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-15 00:00:00'< create_time and create_time < '2019-05-15 23:59:00' ) [ RunTime:0.004908s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-16 00:00:00'< create_time and create_time < '2019-05-16 23:59:00' ) [ RunTime:0.004863s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-17 00:00:00'< create_time and create_time < '2019-05-17 23:59:00' ) [ RunTime:0.004893s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-18 00:00:00'< create_time and create_time < '2019-05-18 23:59:00' ) [ RunTime:0.004895s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-19 00:00:00'< create_time and create_time < '2019-05-19 23:59:00' ) [ RunTime:0.004872s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-20 00:00:00'< create_time and create_time < '2019-05-20 23:59:00' ) [ RunTime:0.004895s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-21 00:00:00'< create_time and create_time < '2019-05-21 23:59:00' ) [ RunTime:0.004930s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-22 00:00:00'< create_time and create_time < '2019-05-22 23:59:00' ) [ RunTime:0.004887s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-23 00:00:00'< create_time and create_time < '2019-05-23 23:59:00' ) [ RunTime:0.004881s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-24 00:00:00'< create_time and create_time < '2019-05-24 23:59:00' ) [ RunTime:0.004884s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-25 00:00:00'< create_time and create_time < '2019-05-25 23:59:00' ) [ RunTime:0.004871s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-26 00:00:00'< create_time and create_time < '2019-05-26 23:59:00' ) [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-27 00:00:00'< create_time and create_time < '2019-05-27 23:59:00' ) [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-28 00:00:00'< create_time and create_time < '2019-05-28 23:59:00' ) [ RunTime:0.004894s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-29 00:00:00'< create_time and create_time < '2019-05-29 23:59:00' ) [ RunTime:0.004888s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-30 00:00:00'< create_time and create_time < '2019-05-30 23:59:00' ) [ RunTime:0.004915s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  (  user_id="19" and '2019-05-31 00:00:00'< create_time and create_time < '2019-05-31 23:59:00' ) [ RunTime:0.005153s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:25+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/
+[运行时间：0.034309s] [吞吐率：29.15req/s] [内存消耗：2,721.91kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001251s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557107333',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001781s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T16:29:25+08:00 ] 103.214.85.218 POST pml.zhihuo.com.cn/api/user/get_userinfo
+[运行时间：0.065059s] [吞吐率：15.37req/s] [内存消耗：3,265.02kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001234s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'get_userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'origin' => 'http://pai.zhihuo.com.cn',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '06e35d34-dd3d-408b-9129-2ef5acabc8cc',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001883s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->get_userinfo[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006181s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004546s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004056s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004510s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.004116s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'ae36a74909d70cc60d6c71d7eea5cf7418f77318' LIMIT 1 [ RunTime:0.004028s ]
+---------------------------------------------------------------
+[ 2019-05-11T16:29:28+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/
+[运行时间：0.021674s] [吞吐率：46.14req/s] [内存消耗：2,721.91kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000838s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557107333',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pai.zhihuo.com.cn/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001228s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T16:32:20+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/
+[运行时间：0.022697s] [吞吐率：44.06req/s] [内存消耗：2,722.11kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000855s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557107333',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001262s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T16:32:21+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/favicon.ico
+[运行时间：0.016541s] [吞吐率：60.46req/s] [内存消耗：1,794.95kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000870s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557107333,1557563539; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557563539',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T16:32:21+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/favicon.ico
+[运行时间：0.014566s] [吞吐率：68.65req/s] [内存消耗：1,794.98kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000840s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557107333,1557563539; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557563539',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T16:32:30+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin
+[运行时间：0.024116s] [吞吐率：41.47req/s] [内存消耗：2,586.82kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000842s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557107333,1557563539; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557563539',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001266s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000370s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T16:32:33+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/index/login?url=%2Fadmin
+[运行时间：0.026628s] [吞吐率：37.55req/s] [内存消耗：2,942.45kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000892s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557107333,1557563539; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557563539; PHPSESSID=37ba84h7bl8ged79csm3nbhg0e',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/admin',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001322s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000074s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T16:32:34+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/ajax/lang?callback=define&controllername=index&v=1557563553
+[运行时间：0.026248s] [吞吐率：38.10req/s] [内存消耗：2,946.26kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000853s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557107333,1557563539; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557563539; PHPSESSID=37ba84h7bl8ged79csm3nbhg0e',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/index/login?url=%2Fadmin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1557563553',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001222s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000068s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T16:32:46+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/
+[运行时间：0.021407s] [吞吐率：46.71req/s] [内存消耗：2,722.58kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000829s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557107333,1557563539; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557563539; PHPSESSID=37ba84h7bl8ged79csm3nbhg0e',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001296s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-11T20:24:01+08:00 ] 101.132.193.68 GET pml.zhihuo.com.cn/
+[运行时间：0.021395s] [吞吐率：46.74req/s] [内存消耗：2,718.45kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000828s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'pml.zhihuo.com.cn',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001287s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File

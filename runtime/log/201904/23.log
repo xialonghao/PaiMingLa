@@ -1,0 +1,47 @@
+---------------------------------------------------------------
+[ 2019-04-23T22:22:49+08:00 ] 112.64.119.194 POST pml.zhihuo.com.cn/api/project/key_result
+[运行时间：0.117526s] [吞吐率：8.51req/s] [内存消耗：3,550.64kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001159s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'key_result',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-cn',
+  'content-length' => '80',
+  'referer' => 'http://106.15.230.197:8080/',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://106.15.230.197:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'pml.zhihuo.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'token' => '9cbd5fbb-fe3b-417a-bd6e-59baf98123e0',
+  'antistop' => '夏龙浩8',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001826s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->key_result[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005544s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.004096s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '0e7f5fff7ce8bd6622bf0be5267cabc6711b08ac' LIMIT 1 [ RunTime:0.003750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004217s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.003755s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '0e7f5fff7ce8bd6622bf0be5267cabc6711b08ac' LIMIT 1 [ RunTime:0.003763s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.004348s ]
+[ sql ] [ SQL ] SELECT `b`.`project_num`,`b`.`taday_ranking`,`b`.`price`,`b`.`keyword_name`,`b`.`channel_name`,`b`.`channel_id`,`a`.`create_time`,`a`.`address` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.user_id="12" and b.keyword_name="夏龙浩8" ) [ RunTime:0.003796s ]

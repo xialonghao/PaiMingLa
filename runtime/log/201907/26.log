@@ -1,0 +1,700 @@
+---------------------------------------------------------------
+[ 2019-07-26T01:00:04+08:00 ] 106.15.230.197 GET pml.zhihuo.com.cn/api/Startreptile/index
+[运行时间：3.145002s] [吞吐率：0.32req/s] [内存消耗：3,969.54kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000341s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002433s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Startreptile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'pml.zhihuo.com.cn',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003567s ]
+[ info ] [ RUN ] app\api\controller\Startreptile->index[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Startreptile.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005671s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006514s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`b`.`project_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  a.status="1" ) [ RunTime:0.004275s ]
+---------------------------------------------------------------
+[ 2019-07-26T07:00:05+08:00 ] 106.15.230.197 GET pml.zhihuo.com.cn/api/Startranking/index
+[运行时间：3.991531s] [吞吐率：0.25req/s] [内存消耗：4,433.34kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000328s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.071719s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Startranking',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'pml.zhihuo.com.cn',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003538s ]
+[ info ] [ RUN ] app\api\controller\Startranking->index[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Startranking.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006247s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.004711s ]
+[ sql ] [ SQL ] SELECT `id` FROM `pml_projcet` WHERE  (  status="1" ) [ RunTime:0.003865s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.004635s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  `projcet_id` = 275  AND (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:59' ) LIMIT 1 [ RunTime:0.004908s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  `id` = 275  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.003524s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`user_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  project_id="275" ) [ RunTime:0.004515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_order` [ RunTime:0.004096s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'SEO公司'  AND `project_id` = 275 LIMIT 1 [ RunTime:0.003622s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'SEO公司'  AND `project_id` = 275 [ RunTime:0.005322s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '上海seo公司'  AND `project_id` = 275 LIMIT 1 [ RunTime:0.003458s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '上海seo公司'  AND `project_id` = 275 [ RunTime:0.005159s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'SEO公司'  AND `project_id` = 275 LIMIT 1 [ RunTime:0.003494s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'SEO公司'  AND `project_id` = 275 [ RunTime:0.005172s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '上海seo公司'  AND `project_id` = 275 LIMIT 1 [ RunTime:0.003464s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '上海seo公司'  AND `project_id` = 275 [ RunTime:0.005149s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  `projcet_id` = 263  AND (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:59' ) LIMIT 1 [ RunTime:0.004138s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  `id` = 263  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.003579s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`user_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  project_id="263" ) [ RunTime:0.003864s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003639s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客'  AND `project_id` = 263 [ RunTime:0.006404s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3804" ) [ RunTime:0.003463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.004794s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003365s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16725  WHERE  (  id="263" ) [ RunTime:0.003962s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',1,'百度PC',643,1,'5.00',40,'lnj',263,'飞流',1,1,3804 ) [ RunTime:0.003697s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003424s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 [ RunTime:0.005264s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3812" ) [ RunTime:0.003437s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003291s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16720  WHERE  (  id="263" ) [ RunTime:0.003402s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',3,'百度移动',644,1,'5.00',40,'lnj',263,'飞流',1,1,3812 ) [ RunTime:0.003332s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003400s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=2,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客'  AND `project_id` = 263 [ RunTime:0.005255s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3805" ) [ RunTime:0.003430s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003295s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16715  WHERE  (  id="263" ) [ RunTime:0.003479s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',3,'百度移动',643,2,'5.00',40,'lnj',263,'飞流',1,1,3805 ) [ RunTime:0.003357s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003424s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 [ RunTime:0.005267s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3811" ) [ RunTime:0.003455s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003275s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16710  WHERE  (  id="263" ) [ RunTime:0.003396s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',1,'百度PC',644,1,'5.00',40,'lnj',263,'飞流',1,1,3811 ) [ RunTime:0.003330s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003382s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 [ RunTime:0.005235s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3815" ) [ RunTime:0.003438s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003320s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16705  WHERE  (  id="263" ) [ RunTime:0.003413s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',5,'360PC',644,1,'5.00',40,'lnj',263,'飞流',1,1,3815 ) [ RunTime:0.003338s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003400s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 [ RunTime:0.005256s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3813" ) [ RunTime:0.003434s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003304s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16700  WHERE  (  id="263" ) [ RunTime:0.003494s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',2,'搜狗PC',644,1,'5.00',40,'lnj',263,'飞流',1,1,3813 ) [ RunTime:0.003398s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003496s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 [ RunTime:0.005391s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3816" ) [ RunTime:0.003526s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003304s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16695  WHERE  (  id="263" ) [ RunTime:0.003541s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',7,'360移动',644,1,'5.00',40,'lnj',263,'飞流',1,1,3816 ) [ RunTime:0.003365s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003410s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=11,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 [ RunTime:0.005238s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003392s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=3,`reach_count`=27,`complete_status`=1  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 263 [ RunTime:0.005218s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3814" ) [ RunTime:0.003469s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003283s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16690  WHERE  (  id="263" ) [ RunTime:0.003448s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',4,'搜狗移动',644,3,'5.00',40,'lnj',263,'飞流',1,1,3814 ) [ RunTime:0.003323s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003375s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客'  AND `project_id` = 263 [ RunTime:0.005180s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3808" ) [ RunTime:0.003373s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003267s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16685  WHERE  (  id="263" ) [ RunTime:0.003380s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',5,'360PC',643,1,'5.00',40,'lnj',263,'飞流',1,1,3808 ) [ RunTime:0.003380s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003434s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=12,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客'  AND `project_id` = 263 [ RunTime:0.005215s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003481s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客'  AND `project_id` = 263 [ RunTime:0.006668s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3809" ) [ RunTime:0.003597s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003308s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16680  WHERE  (  id="263" ) [ RunTime:0.003430s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',7,'360移动',643,1,'5.00',40,'lnj',263,'飞流',1,1,3809 ) [ RunTime:0.003441s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003420s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客'  AND `project_id` = 263 [ RunTime:0.005231s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客'  AND `project_id` = 263 LIMIT 1 [ RunTime:0.003459s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=3,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客'  AND `project_id` = 263 [ RunTime:0.005338s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3806" ) [ RunTime:0.003480s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003322s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=16675  WHERE  (  id="263" ) [ RunTime:0.003494s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_Ex7T1Y_40',2,'搜狗PC',643,3,'5.00',40,'lnj',263,'飞流',1,1,3806 ) [ RunTime:0.003369s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  `projcet_id` = 265  AND (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:59' ) LIMIT 1 [ RunTime:0.004072s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  `id` = 265  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.003503s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`user_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  project_id="265" ) [ RunTime:0.003880s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003725s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客'  AND `project_id` = 265 [ RunTime:0.005887s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3851" ) [ RunTime:0.003548s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003416s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11305  WHERE  (  id="265" ) [ RunTime:0.003488s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',7,'360移动',649,1,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3851 ) [ RunTime:0.003431s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003482s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客'  AND `project_id` = 265 [ RunTime:0.005285s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3846" ) [ RunTime:0.003435s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003325s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11300  WHERE  (  id="265" ) [ RunTime:0.003426s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',1,'百度PC',649,1,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3846 ) [ RunTime:0.003449s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003461s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 [ RunTime:0.005252s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003448s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=3,`reach_count`=27,`complete_status`=1  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 [ RunTime:0.005401s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3863" ) [ RunTime:0.003437s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003306s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11295  WHERE  (  id="265" ) [ RunTime:0.003538s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',4,'搜狗移动',651,3,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3863 ) [ RunTime:0.003376s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003507s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=2,`reach_count`=27,`complete_status`=1  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客'  AND `project_id` = 265 [ RunTime:0.005548s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3849" ) [ RunTime:0.003524s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003329s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11290  WHERE  (  id="265" ) [ RunTime:0.003676s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',4,'搜狗移动',649,2,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3849 ) [ RunTime:0.003365s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003548s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=28,`complete_status`=1  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客'  AND `project_id` = 265 [ RunTime:0.005507s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3850" ) [ RunTime:0.003577s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003321s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11285  WHERE  (  id="265" ) [ RunTime:0.003656s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',5,'360PC',649,1,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3850 ) [ RunTime:0.003424s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003525s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=12,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客'  AND `project_id` = 265 [ RunTime:0.005187s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003507s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 [ RunTime:0.005517s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3860" ) [ RunTime:0.003518s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003298s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11280  WHERE  (  id="265" ) [ RunTime:0.003658s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',1,'百度PC',651,1,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3860 ) [ RunTime:0.003388s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003503s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=28,`complete_status`=1  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 [ RunTime:0.005513s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3861" ) [ RunTime:0.003511s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003331s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11275  WHERE  (  id="265" ) [ RunTime:0.003744s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',3,'百度移动',651,1,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3861 ) [ RunTime:0.003457s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003530s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=37,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 [ RunTime:0.006524s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003614s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=28,`complete_status`=1  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 [ RunTime:0.005576s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3864" ) [ RunTime:0.003545s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003319s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11270  WHERE  (  id="265" ) [ RunTime:0.003619s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',5,'360PC',651,1,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3864 ) [ RunTime:0.003382s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003550s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 [ RunTime:0.005407s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3862" ) [ RunTime:0.003471s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003311s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11265  WHERE  (  id="265" ) [ RunTime:0.003526s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',2,'搜狗PC',651,1,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3862 ) [ RunTime:0.003411s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003491s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 [ RunTime:0.005451s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3865" ) [ RunTime:0.003514s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003329s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11260  WHERE  (  id="265" ) [ RunTime:0.003643s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',7,'360移动',651,1,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3865 ) [ RunTime:0.003388s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003508s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=16,`complete_status`=0  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 [ RunTime:0.005258s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003451s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=3,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客'  AND `project_id` = 265 [ RunTime:0.005543s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3848" ) [ RunTime:0.003513s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003289s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11255  WHERE  (  id="265" ) [ RunTime:0.003624s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',2,'搜狗PC',649,3,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3848 ) [ RunTime:0.003359s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003524s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 [ RunTime:0.005236s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003420s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 [ RunTime:0.005164s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003422s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 [ RunTime:0.005227s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003432s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=2,`reach_count`=30,`complete_status`=1  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客'  AND `project_id` = 265 [ RunTime:0.005464s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="3847" ) [ RunTime:0.003512s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003353s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=11250  WHERE  (  id="265" ) [ RunTime:0.003461s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190701_NfRubK_41',3,'百度移动',649,2,'5.00',41,'zhaobin',265,'飞客茶馆',1,1,3847 ) [ RunTime:0.003393s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003489s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=11,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 265 [ RunTime:0.005477s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003478s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 [ RunTime:0.005336s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '旅行'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003531s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=89,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '旅行'  AND `project_id` = 265 [ RunTime:0.005506s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003479s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=27,`complete_status`=0  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 [ RunTime:0.005190s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003498s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 [ RunTime:0.005270s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003500s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 [ RunTime:0.005240s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003522s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=94,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 265 [ RunTime:0.005697s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003451s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 [ RunTime:0.005234s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003500s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 [ RunTime:0.005194s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 LIMIT 1 [ RunTime:0.003472s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '阿斯顿'  AND `project_id` = 265 [ RunTime:0.005204s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  `projcet_id` = 293  AND (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:59' ) LIMIT 1 [ RunTime:0.003946s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  `id` = 293  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.003456s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`user_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  project_id="293" ) [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '品牌定制'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003918s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=8,`reach_count`=28,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '品牌定制'  AND `project_id` = 293 [ RunTime:0.007159s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4121" ) [ RunTime:0.003561s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="42" ) LIMIT 1 [ RunTime:0.003610s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=2195  WHERE  (  id="293" ) [ RunTime:0.003408s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190703_NSH4sj_42',1,'百度PC',712,8,'5.00',42,'Marie',293,'云尚定SEO优化服务',1,1,4121 ) [ RunTime:0.003387s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'ysd'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003473s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=3,`reach_count`=28,`complete_status`=1  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'ysd'  AND `project_id` = 293 [ RunTime:0.006589s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4110" ) [ RunTime:0.003532s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="42" ) LIMIT 1 [ RunTime:0.003401s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=2190  WHERE  (  id="293" ) [ RunTime:0.003507s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190703_NSH4sj_42',3,'百度移动',706,3,'5.00',42,'Marie',293,'云尚定SEO优化服务',1,1,4110 ) [ RunTime:0.003405s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '云尚定'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003707s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=6,`reach_count`=28,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '云尚定'  AND `project_id` = 293 [ RunTime:0.006661s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4107" ) [ RunTime:0.003526s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="42" ) LIMIT 1 [ RunTime:0.003349s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=2185  WHERE  (  id="293" ) [ RunTime:0.003433s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190703_NSH4sj_42',1,'百度PC',705,6,'5.00',42,'Marie',293,'云尚定SEO优化服务',1,1,4107 ) [ RunTime:0.003277s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '云尚定'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003439s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=9,`reach_count`=26,`complete_status`=1  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '云尚定'  AND `project_id` = 293 [ RunTime:0.005255s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4108" ) [ RunTime:0.003400s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="42" ) LIMIT 1 [ RunTime:0.003232s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=2180  WHERE  (  id="293" ) [ RunTime:0.003366s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190703_NSH4sj_42',3,'百度移动',705,9,'5.00',42,'Marie',293,'云尚定SEO优化服务',1,1,4108 ) [ RunTime:0.003324s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '零售定制'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003451s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=58,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '零售定制'  AND `project_id` = 293 [ RunTime:0.005169s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '闪印'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003392s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=12,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '闪印'  AND `project_id` = 293 [ RunTime:0.005118s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '活动定制'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003451s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=42,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '活动定制'  AND `project_id` = 293 [ RunTime:0.005209s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'cimpress'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003443s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'cimpress'  AND `project_id` = 293 [ RunTime:0.005149s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'ysd'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003399s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=28,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'ysd'  AND `project_id` = 293 [ RunTime:0.005210s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4109" ) [ RunTime:0.003414s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="42" ) LIMIT 1 [ RunTime:0.003256s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=2175  WHERE  (  id="293" ) [ RunTime:0.003371s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190703_NSH4sj_42',1,'百度PC',706,1,'5.00',42,'Marie',293,'云尚定SEO优化服务',1,1,4109 ) [ RunTime:0.003313s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '闪印'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003377s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=8,`reach_count`=25,`complete_status`=1  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '闪印'  AND `project_id` = 293 [ RunTime:0.005195s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4114" ) [ RunTime:0.003388s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="42" ) LIMIT 1 [ RunTime:0.003256s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=2170  WHERE  (  id="293" ) [ RunTime:0.003354s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '86_20190703_NSH4sj_42',3,'百度移动',708,8,'5.00',42,'Marie',293,'云尚定SEO优化服务',1,1,4114 ) [ RunTime:0.003303s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'cimpress'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003445s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=14,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'cimpress'  AND `project_id` = 293 [ RunTime:0.005100s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'C2M定制'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003406s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=25,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'C2M定制'  AND `project_id` = 293 [ RunTime:0.005267s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '定制解决方案'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003390s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '定制解决方案'  AND `project_id` = 293 [ RunTime:0.005126s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '定制解决方案'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003401s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '定制解决方案'  AND `project_id` = 293 [ RunTime:0.005162s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '智能工厂'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003395s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '智能工厂'  AND `project_id` = 293 [ RunTime:0.005191s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '品牌定制'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003534s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '品牌定制'  AND `project_id` = 293 [ RunTime:0.005202s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '智能工厂'  AND `project_id` = 293 LIMIT 1 [ RunTime:0.003410s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '智能工厂'  AND `project_id` = 293 [ RunTime:0.005226s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  `projcet_id` = 307  AND (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:59' ) LIMIT 1 [ RunTime:0.003790s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  `id` = 307  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.003423s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`user_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  project_id="307" ) [ RunTime:0.003687s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'SEO公司'  AND `project_id` = 307 LIMIT 1 [ RunTime:0.003652s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'SEO公司'  AND `project_id` = 307 [ RunTime:0.005550s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '上海seo公司'  AND `project_id` = 307 LIMIT 1 [ RunTime:0.003539s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '上海seo公司'  AND `project_id` = 307 [ RunTime:0.005162s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'SEO公司'  AND `project_id` = 307 LIMIT 1 [ RunTime:0.003455s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'SEO公司'  AND `project_id` = 307 [ RunTime:0.005127s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '上海seo公司'  AND `project_id` = 307 LIMIT 1 [ RunTime:0.003436s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=97,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '上海seo公司'  AND `project_id` = 307 [ RunTime:0.005565s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  `projcet_id` = 322  AND (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:59' ) LIMIT 1 [ RunTime:0.003912s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  `id` = 322  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.003398s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`user_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  project_id="322" ) [ RunTime:0.003735s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003710s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=24,`complete_status`=1  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 [ RunTime:0.005741s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4360" ) [ RunTime:0.003516s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003295s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20480  WHERE  (  id="322" ) [ RunTime:0.003599s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',2,'搜狗PC',754,1,'40.00',41,'zhaobin',322,'www.flyertea.com',1,1,4360 ) [ RunTime:0.003419s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003489s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=24,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客'  AND `project_id` = 322 [ RunTime:0.005326s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4337" ) [ RunTime:0.003479s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003341s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20440  WHERE  (  id="322" ) [ RunTime:0.003412s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',1,'百度PC',751,1,'40.00',41,'zhaobin',322,'www.flyertea.com',1,1,4337 ) [ RunTime:0.003359s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003466s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=24,`complete_status`=1  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客'  AND `project_id` = 322 [ RunTime:0.005282s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4341" ) [ RunTime:0.003434s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003286s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20405  WHERE  (  id="322" ) [ RunTime:0.003398s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',5,'360PC',751,1,'35.00',41,'zhaobin',322,'www.flyertea.com',1,1,4341 ) [ RunTime:0.003428s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003496s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=12,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 [ RunTime:0.005287s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003437s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=24,`complete_status`=1  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客'  AND `project_id` = 322 [ RunTime:0.005224s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4342" ) [ RunTime:0.003434s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003311s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20370  WHERE  (  id="322" ) [ RunTime:0.003385s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',7,'360移动',751,1,'35.00',41,'zhaobin',322,'www.flyertea.com',1,1,4342 ) [ RunTime:0.003370s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003428s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=3,`reach_count`=22,`complete_status`=1  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 [ RunTime:0.005258s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4361" ) [ RunTime:0.003420s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003296s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20345  WHERE  (  id="322" ) [ RunTime:0.003430s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',4,'搜狗移动',754,3,'25.00',41,'zhaobin',322,'www.flyertea.com',1,1,4361 ) [ RunTime:0.003317s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003458s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=18,`complete_status`=0  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 [ RunTime:0.005184s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003431s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=12,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '飞客'  AND `project_id` = 322 [ RunTime:0.005170s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003452s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=24,`complete_status`=1  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 [ RunTime:0.005336s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4359" ) [ RunTime:0.003421s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003267s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20320  WHERE  (  id="322" ) [ RunTime:0.003504s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',3,'百度移动',754,1,'25.00',41,'zhaobin',322,'www.flyertea.com',1,1,4359 ) [ RunTime:0.003354s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003472s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=24,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 [ RunTime:0.005345s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4358" ) [ RunTime:0.003391s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003264s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20280  WHERE  (  id="322" ) [ RunTime:0.003426s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',1,'百度PC',754,1,'40.00',41,'zhaobin',322,'www.flyertea.com',1,1,4358 ) [ RunTime:0.003337s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003455s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=22,`complete_status`=1  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 [ RunTime:0.005337s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4362" ) [ RunTime:0.003432s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003274s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20255  WHERE  (  id="322" ) [ RunTime:0.003445s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',5,'360PC',754,1,'25.00',41,'zhaobin',322,'www.flyertea.com',1,1,4362 ) [ RunTime:0.003328s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003544s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=2,`reach_count`=22,`complete_status`=1  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '飞客'  AND `project_id` = 322 [ RunTime:0.005947s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4340" ) [ RunTime:0.003534s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003382s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20220  WHERE  (  id="322" ) [ RunTime:0.003688s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',4,'搜狗移动',751,2,'35.00',41,'zhaobin',322,'www.flyertea.com',1,1,4340 ) [ RunTime:0.003426s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003544s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=31,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 [ RunTime:0.005497s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003533s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=47,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 [ RunTime:0.005405s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '旅行'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003508s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=87,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '旅行'  AND `project_id` = 322 [ RunTime:0.005493s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003559s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 [ RunTime:0.005185s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '旅行'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003578s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=38,`complete_status`=0  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '旅行'  AND `project_id` = 322 [ RunTime:0.005217s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003467s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=24,`complete_status`=1  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '飞客茶馆'  AND `project_id` = 322 [ RunTime:0.005421s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4363" ) [ RunTime:0.003480s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003303s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20195  WHERE  (  id="322" ) [ RunTime:0.003608s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',7,'360移动',754,1,'25.00',41,'zhaobin',322,'www.flyertea.com',1,1,4363 ) [ RunTime:0.003350s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003509s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=27,`complete_status`=0  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 [ RunTime:0.005167s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003484s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=2,`reach_count`=22,`complete_status`=1  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '飞客'  AND `project_id` = 322 [ RunTime:0.005426s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4338" ) [ RunTime:0.003464s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003310s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20160  WHERE  (  id="322" ) [ RunTime:0.003467s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',3,'百度移动',751,2,'35.00',41,'zhaobin',322,'www.flyertea.com',1,1,4338 ) [ RunTime:0.003373s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '旅行'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003516s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '旅行'  AND `project_id` = 322 [ RunTime:0.005178s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '旅行'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003442s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=51,`complete_status`=0  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '旅行'  AND `project_id` = 322 [ RunTime:0.005333s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '旅行'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003439s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '旅行'  AND `project_id` = 322 [ RunTime:0.005144s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '旅行'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003443s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '旅行'  AND `project_id` = 322 [ RunTime:0.005160s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003474s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 [ RunTime:0.005116s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003443s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=3,`reach_count`=22,`complete_status`=1  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '飞客'  AND `project_id` = 322 [ RunTime:0.005296s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="4339" ) [ RunTime:0.003419s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="41" ) LIMIT 1 [ RunTime:0.003251s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=20120  WHERE  (  id="322" ) [ RunTime:0.003447s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070520184841',2,'搜狗PC',751,3,'40.00',41,'zhaobin',322,'www.flyertea.com',1,1,4339 ) [ RunTime:0.003286s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003488s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '茶馆'  AND `project_id` = 322 [ RunTime:0.005128s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '旅行'  AND `project_id` = 322 LIMIT 1 [ RunTime:0.003444s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '旅行'  AND `project_id` = 322 [ RunTime:0.005141s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  `projcet_id` = 292  AND (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:59' ) LIMIT 1 [ RunTime:0.003829s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  `id` = 292  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.003423s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`user_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  project_id="292" ) [ RunTime:0.003703s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = 'refine'  AND `project_id` = 292 LIMIT 1 [ RunTime:0.003729s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '360移动'  AND `keyword_name` = 'refine'  AND `project_id` = 292 [ RunTime:0.005216s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = 'refine'  AND `project_id` = 292 LIMIT 1 [ RunTime:0.003439s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '360PC'  AND `keyword_name` = 'refine'  AND `project_id` = 292 [ RunTime:0.005101s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = 'refine'  AND `project_id` = 292 LIMIT 1 [ RunTime:0.003438s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = 'refine'  AND `project_id` = 292 [ RunTime:0.005123s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'refine'  AND `project_id` = 292 LIMIT 1 [ RunTime:0.003490s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = 'refine'  AND `project_id` = 292 [ RunTime:0.005142s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'refine'  AND `project_id` = 292 LIMIT 1 [ RunTime:0.003447s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = 'refine'  AND `project_id` = 292 [ RunTime:0.005114s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = 'refine'  AND `project_id` = 292 LIMIT 1 [ RunTime:0.003458s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = 'refine'  AND `project_id` = 292 [ RunTime:0.005144s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = 'refine'  AND `project_id` = 292 LIMIT 1 [ RunTime:0.003462s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = 'refine'  AND `project_id` = 292 [ RunTime:0.005125s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  `projcet_id` = 466  AND (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:59' ) LIMIT 1 [ RunTime:0.003823s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  `id` = 466  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.003444s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`user_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  project_id="466" ) [ RunTime:0.003997s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '百度'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003849s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=6,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '百度'  AND `project_id` = 466 [ RunTime:0.006106s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="5208" ) [ RunTime:0.003505s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003304s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=24200  WHERE  (  id="466" ) [ RunTime:0.003643s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019072017480740',1,'百度PC',1007,1,'40.00',40,'lnj',466,'百度',1,1,5208 ) [ RunTime:0.003442s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003774s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=11,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 [ RunTime:0.005497s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '百度'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003718s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=12,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '百度'  AND `project_id` = 466 [ RunTime:0.005178s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '百度'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003667s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=6,`complete_status`=1  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '百度'  AND `project_id` = 466 [ RunTime:0.005446s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="5212" ) [ RunTime:0.003521s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003299s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=24160  WHERE  (  id="466" ) [ RunTime:0.003655s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019072017480740',5,'360PC',1007,1,'40.00',40,'lnj',466,'百度',1,1,5212 ) [ RunTime:0.003410s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003778s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=13,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 [ RunTime:0.005267s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003659s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 [ RunTime:0.005220s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003762s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 [ RunTime:0.005246s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003686s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 [ RunTime:0.005231s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003723s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 [ RunTime:0.005272s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003732s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 [ RunTime:0.005216s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003624s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 [ RunTime:0.005189s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '百度'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003743s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '百度'  AND `project_id` = 466 [ RunTime:0.005178s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003690s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 [ RunTime:0.005190s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003739s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 [ RunTime:0.005248s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '百度'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003787s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '百度'  AND `project_id` = 466 [ RunTime:0.005272s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.004174s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=68,`complete_status`=0  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 [ RunTime:0.006993s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '百度'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.004011s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=6,`complete_status`=1  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '百度'  AND `project_id` = 466 [ RunTime:0.006624s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="5210" ) [ RunTime:0.003612s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003408s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=24120  WHERE  (  id="466" ) [ RunTime:0.003797s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019072017480740',2,'搜狗PC',1007,1,'40.00',40,'lnj',466,'百度',1,1,5210 ) [ RunTime:0.003471s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003911s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=10,`reach_count`=5,`complete_status`=1  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 [ RunTime:0.005662s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="5225" ) [ RunTime:0.003494s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003249s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=24080  WHERE  (  id="466" ) [ RunTime:0.003606s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019072017480740',4,'搜狗移动',1009,10,'40.00',40,'lnj',466,'百度',1,1,5225 ) [ RunTime:0.003376s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '百度'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003718s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=26,`complete_status`=0  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '百度'  AND `project_id` = 466 [ RunTime:0.005406s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003667s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=6,`reach_count`=6,`complete_status`=1  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '百度贴吧'  AND `project_id` = 466 [ RunTime:0.005183s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="5224" ) [ RunTime:0.003416s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="40" ) LIMIT 1 [ RunTime:0.003273s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=24040  WHERE  (  id="466" ) [ RunTime:0.003400s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019072017480740',2,'搜狗PC',1009,6,'40.00',40,'lnj',466,'百度',1,1,5224 ) [ RunTime:0.003329s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 LIMIT 1 [ RunTime:0.003683s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=13,`complete_status`=0  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '百度图片'  AND `project_id` = 466 [ RunTime:0.005435s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_consumption` WHERE  `projcet_id` = 459  AND (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:59' ) LIMIT 1 [ RunTime:0.003903s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` WHERE  `id` = 459  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.003435s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`user_id` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  project_id="459" ) [ RunTime:0.003764s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 LIMIT 1 [ RunTime:0.004067s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=4,`reach_count`=15,`complete_status`=1  WHERE  `channel_name` = '百度PC'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 [ RunTime:0.006085s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="5200" ) [ RunTime:0.003500s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="47" ) LIMIT 1 [ RunTime:0.003464s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=5910  WHERE  (  id="459" ) [ RunTime:0.003470s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070923585147',1,'百度PC',1005,4,'5.00',47,'eden',459,'智火SEO',1,1,5200 ) [ RunTime:0.003380s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360PC'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 LIMIT 1 [ RunTime:0.003716s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=17,`complete_status`=1  WHERE  `channel_name` = '360PC'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 [ RunTime:0.005222s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="5204" ) [ RunTime:0.003483s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="47" ) LIMIT 1 [ RunTime:0.003307s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=5905  WHERE  (  id="459" ) [ RunTime:0.003605s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070923585147',5,'360PC',1005,1,'5.00',47,'eden',459,'智火SEO',1,1,5204 ) [ RunTime:0.003382s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '360移动'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 LIMIT 1 [ RunTime:0.003739s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=16,`complete_status`=1  WHERE  `channel_name` = '360移动'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 [ RunTime:0.005494s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="5205" ) [ RunTime:0.003492s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="47" ) LIMIT 1 [ RunTime:0.003280s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=5900  WHERE  (  id="459" ) [ RunTime:0.003528s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070923585147',7,'360移动',1005,1,'5.00',47,'eden',459,'智火SEO',1,1,5205 ) [ RunTime:0.003328s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '神马'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 LIMIT 1 [ RunTime:0.003724s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '神马'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 [ RunTime:0.005219s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 LIMIT 1 [ RunTime:0.003652s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=100,`complete_status`=0  WHERE  `channel_name` = '百度移动'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 [ RunTime:0.005166s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 LIMIT 1 [ RunTime:0.003634s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=15,`complete_status`=0  WHERE  `channel_name` = '搜狗移动'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 [ RunTime:0.005442s ]
+[ sql ] [ SQL ] SELECT `user_id`,`id`,`reach_count` FROM `pml_order` WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 LIMIT 1 [ RunTime:0.003841s ]
+[ sql ] [ SQL ] UPDATE `pml_order`  SET `taday_ranking`=1,`reach_count`=16,`complete_status`=1  WHERE  `channel_name` = '搜狗PC'  AND `keyword_name` = '上海知名SEO公司'  AND `project_id` = 459 [ RunTime:0.005424s ]
+[ sql ] [ SQL ] SELECT b.id as order_id,`b`.`project_num`,`b`.`channel_id`,`b`.`channel_name`,`b`.`keyword_id`,`b`.`keyword_name`,`b`.`taday_ranking`,`b`.`price`,`b`.`project_id`,`a`.`name`,`b`.`user_id`,`a`.`amount` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  b.id="5202" ) [ RunTime:0.003490s ]
+[ sql ] [ SQL ] SELECT `username` FROM `pml_user` WHERE  (  id="47" ) LIMIT 1 [ RunTime:0.003354s ]
+[ sql ] [ SQL ] UPDATE `pml_projcet`  SET `amount`=5895  WHERE  (  id="459" ) [ RunTime:0.003475s ]
+[ sql ] [ SQL ] INSERT INTO `pml_consumption` (`order_sn` , `channel_id` , `channel_name` , `keyword_id` , `ranking` , `money` , `user_id` , `user_name` , `projcet_id` , `projcet_name` , `status` , `is_qualified` , `order_id`) VALUES ( '862019070923585147',2,'搜狗PC',1005,1,'5.00',47,'eden',459,'智火SEO',1,1,5202 ) [ RunTime:0.003422s ]
+---------------------------------------------------------------
+[ 2019-07-26T10:18:18+08:00 ] 47.101.199.6 GET pml.zhihuo.com.cn/
+[运行时间：0.119151s] [吞吐率：8.39req/s] [内存消耗：2,579.38kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000277s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002661s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003431s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000350s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-26T10:18:19+08:00 ] 47.101.199.6 GET pml.zhihuo.com.cn/admin/index/login?url=%2F
+[运行时间：0.044520s] [吞吐率：22.46req/s] [内存消耗：2,936.06kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001228s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001918s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000095s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-26T10:18:19+08:00 ] 47.101.199.6 GET pml.zhihuo.com.cn/admin/index/login?u
+[运行时间：0.046122s] [吞吐率：21.68req/s] [内存消耗：2,936.03kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001161s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'u' => '',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001886s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000089s ]
+[ info ] [ LOG ] INIT File

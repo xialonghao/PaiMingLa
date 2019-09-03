@@ -1,0 +1,15 @@
+@charset "UTF-8";
+ul,ol,li{
+    list-style: none;
+}
+#hanginfo{
+    width: 600px;
+    margin-left: -150px;
+    margin-bottom: 20px;
+}
+
+#hanginfo>ul>li{
+    display: inline-block;
+    width: 32%;
+}
+

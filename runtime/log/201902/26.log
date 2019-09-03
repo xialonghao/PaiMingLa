@@ -1,0 +1,504 @@
+---------------------------------------------------------------
+[ 2019-02-26T14:32:09+08:00 ] 127.0.0.1 GET pml.cn/index.php/admin/dashboard?ref=addtabs
+[运行时间：0.474326s] [吞吐率：2.11req/s] [内存消耗：2,589.59kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.022290s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.014308s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/common\view\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000868s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-26T14:32:09+08:00 ] 127.0.0.1 GET pml.cn/favicon.ico
+[运行时间：0.032111s] [吞吐率：31.14req/s] [内存消耗：1,737.89kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002211s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://pml.cn/index.php/admin/dashboard?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821; PHPSESSID=j793anr5epmp7lo7u5eoga5461',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-26T14:32:12+08:00 ] 127.0.0.1 GET pml.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin%2Fdashboard%3Fref%3Daddtabs
+[运行时间：0.102094s] [吞吐率：9.79req/s] [内存消耗：3,117.49kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002018s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://pml.cn/index.php/admin/dashboard?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821; PHPSESSID=j793anr5epmp7lo7u5eoga5461',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/index.php/admin/dashboard?ref=addtabs',
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002674s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\phpstudy\PHPTutorial\WWW\pml\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000667s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-26T14:32:13+08:00 ] 127.0.0.1 GET pml.cn/index.php/admin/ajax/lang?callback=define&controllername=index&v=1551162732
+[运行时间：0.076310s] [吞吐率：13.10req/s] [内存消耗：2,976.16kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002657s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://pml.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin%2Fdashboard%3Fref%3Daddtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821; PHPSESSID=j793anr5epmp7lo7u5eoga5461',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1551162732',
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002618s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\phpstudy\PHPTutorial\WWW\pml\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000823s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-26T14:32:20+08:00 ] 127.0.0.1 POST pml.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin%2Fdashboard%3Fref%3Daddtabs
+[运行时间：0.368382s] [吞吐率：2.71req/s] [内存消耗：3,834.80kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002542s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://pml.cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://pml.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin%2Fdashboard%3Fref%3Daddtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821; PHPSESSID=j793anr5epmp7lo7u5eoga5461',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/index.php/admin/dashboard?ref=addtabs',
+  '__token__' => '9b5ce45bb5f621539b849ada194c64f1',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002604s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ E:\phpstudy\PHPTutorial\WWW\pml\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.071333s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011212s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_admin` [ RunTime:0.083982s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.002339s ]
+[ sql ] [ SQL ] UPDATE `pml_admin`  SET `logintime`=1551162739,`token`='dd6ac147-f7cc-4bb0-a52c-97fc5dedf757',`updatetime`=1551162739  WHERE  `id` = 1 [ RunTime:0.031916s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_admin_log` [ RunTime:0.041287s ]
+[ sql ] [ SQL ] INSERT INTO `pml_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/index.php\\/admin\\/dashboard?ref=addtabs\",\"__token__\":\"9b5ce45bb5f621539b849ada194c64f1\",\"username\":\"admin\"}' , '/index.php/admin/index/login?url=%2Findex.php%2Fadmin%2Fdashboard%3Fref%3Daddtabs' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36' , '127.0.0.1' , 1551162740) [ RunTime:0.028315s ]
+---------------------------------------------------------------
+[ 2019-02-26T14:32:20+08:00 ] 127.0.0.1 GET pml.cn/index.php/admin/dashboard?ref=addtabs
+[运行时间：0.165188s] [吞吐率：6.05req/s] [内存消耗：3,677.26kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002398s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://pml.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin%2Fdashboard%3Fref%3Daddtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821; PHPSESSID=j793anr5epmp7lo7u5eoga5461',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003345s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000640s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011371s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_group_access` [ RunTime:0.049936s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `pml_auth_group_access` `aga` LEFT JOIN `pml_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.009360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_rule` [ RunTime:0.021484s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `pml_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001797s ]
+---------------------------------------------------------------
+[ 2019-02-26T14:32:21+08:00 ] 127.0.0.1 GET pml.cn/index.php/admin/index/index
+[运行时间：1.702189s] [吞吐率：0.59req/s] [内存消耗：4,343.51kb] [文件加载：92]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002829s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://pml.cn/index.php/admin/index/login?url=%2Findex.php%2Fadmin%2Fdashboard%3Fref%3Daddtabs',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821; PHPSESSID=j793anr5epmp7lo7u5eoga5461',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002340s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\phpstudy\PHPTutorial\WWW\pml\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000632s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011025s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_group_access` [ RunTime:0.009358s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `pml_auth_group_access` `aga` LEFT JOIN `pml_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_rule` [ RunTime:0.008127s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `pml_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001252s ]
+---------------------------------------------------------------
+[ 2019-02-26T14:32:22+08:00 ] 127.0.0.1 GET pml.cn/index.php/admin/dashboard?addtabs=1
+[运行时间：0.265740s] [吞吐率：3.76req/s] [内存消耗：4,099.77kb] [文件加载：82]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002575s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://pml.cn/index.php/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821; PHPSESSID=j793anr5epmp7lo7u5eoga5461',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002412s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ E:\phpstudy\PHPTutorial\WWW\pml\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000698s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000773s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_group_access` [ RunTime:0.008554s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `pml_auth_group_access` `aga` LEFT JOIN `pml_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_rule` [ RunTime:0.009630s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `pml_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.042502s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` WHERE  `status` = '1'  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.011469s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` WHERE  `status` = '1'  AND `pay_status` = '1'  AND `endtime` BETWEEN '2019-02-26 00:00:00' AND '2019-03-05 00:00:00' LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_worder` [ RunTime:0.047701s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_worder` WHERE  `status` = '0' LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_invoice` [ RunTime:0.028037s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_invoice` WHERE  `status` = '0' LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `pml_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000555s ]
+---------------------------------------------------------------
+[ 2019-02-26T14:32:22+08:00 ] 127.0.0.1 GET pml.cn/index.php/admin/ajax/lang?callback=define&controllername=index&v=1551162740
+[运行时间：0.144344s] [吞吐率：6.93req/s] [内存消耗：2,977.55kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002764s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://pml.cn/index.php/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821; PHPSESSID=j793anr5epmp7lo7u5eoga5461',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1551162740',
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002658s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\phpstudy\PHPTutorial\WWW\pml\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000763s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-26T14:32:22+08:00 ] 127.0.0.1 GET pml.cn/index.php/admin/ajax/lang?callback=define&controllername=dashboard&v=1551162742
+[运行时间：0.063648s] [吞吐率：15.71req/s] [内存消耗：2,975.60kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002821s ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'pml.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://pml.cn/index.php/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-HK;q=0.7',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1548150728,1548991696,1549848085,1549932821; PHPSESSID=j793anr5epmp7lo7u5eoga5461',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1551162742',
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003304s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ E:\phpstudy\PHPTutorial\WWW\pml\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] E:\phpstudy\PHPTutorial\WWW\pml\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000844s ]
+[ info ] [ LOG ] INIT File

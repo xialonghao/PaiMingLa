@@ -1,0 +1,1974 @@
+---------------------------------------------------------------
+[ 2019-03-09T10:30:00+08:00 ] 127.0.0.1 GET www.pml.com/
+[运行时间：2.851187s] [吞吐率：0.35req/s] [内存消耗：2,182.52kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000271s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002503s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003172s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpStudys\PHPTutorial\WWW\ranking\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T10:30:05+08:00 ] 127.0.0.1 GET www.pml.com/favicon.ico
+[运行时间：1.552347s] [吞吐率：0.64req/s] [内存消耗：1,396.00kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001433s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pml.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T10:30:07+08:00 ] 127.0.0.1 GET www.pml.com/admin/index/login.html
+[运行时间：0.700541s] [吞吐率：1.43req/s] [内存消耗：2,375.35kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001289s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pml.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002610s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000569s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T10:30:08+08:00 ] 127.0.0.1 GET www.pml.com/admin/ajax/lang?callback=define&controllername=index&v=1552098606
+[运行时间：0.041930s] [吞吐率：23.85req/s] [内存消耗：2,377.97kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001293s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pml.com/admin/index/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1552098606',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001159s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudys\PHPTutorial\WWW\ranking\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000381s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T10:30:19+08:00 ] 127.0.0.1 POST www.pml.com/admin/index/login.html
+[运行时间：2.530762s] [吞吐率：0.40req/s] [内存消耗：3,060.44kb] [文件加载：78]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001218s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pml.com/admin/index/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.pml.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '76',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => 'e8983a815ef4079be44a11ab8f7b63c1',
+  'username' => 'admin',
+  'password' => 'xlh980531',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002084s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.691537s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.844959s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_admin` [ RunTime:0.571712s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.008259s ]
+[ sql ] [ SQL ] UPDATE `pml_admin`  SET `loginfailure`=1,`updatetime`=1552098618  WHERE  `id` = 1 [ RunTime:0.144879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_admin_log` [ RunTime:0.526655s ]
+[ sql ] [ SQL ] INSERT INTO `pml_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"e8983a815ef4079be44a11ab8f7b63c1\",\"username\":\"admin\"}' , '/admin/index/login.html' , 0 , 'Unknown' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36' , '127.0.0.1' , 1552098619) [ RunTime:0.162689s ]
+---------------------------------------------------------------
+[ 2019-03-09T10:30:25+08:00 ] 127.0.0.1 POST www.pml.com/admin/index/login.html
+[运行时间：0.403170s] [吞吐率：2.48req/s] [内存消耗：3,080.16kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001271s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pml.com/admin/index/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.pml.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '73',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => '9ffc9057abf135c1950ca99a178eb6ce',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001415s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.102509s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002617s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_admin` [ RunTime:0.054271s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] UPDATE `pml_admin`  SET `loginfailure`=0,`logintime`=1552098624,`token`='d32cb399-c331-47aa-a9a2-081d661abaee',`updatetime`=1552098624  WHERE  `id` = 1 [ RunTime:0.122470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_admin_log` [ RunTime:0.033816s ]
+[ sql ] [ SQL ] INSERT INTO `pml_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"9ffc9057abf135c1950ca99a178eb6ce\",\"username\":\"admin\"}' , '/admin/index/login.html' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36' , '127.0.0.1' , 1552098625) [ RunTime:0.066970s ]
+---------------------------------------------------------------
+[ 2019-03-09T10:30:27+08:00 ] 127.0.0.1 GET www.pml.com/admin/index/index
+[运行时间：2.065884s] [吞吐率：0.48req/s] [内存消耗：3,579.57kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001267s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pml.com/admin/index/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001267s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ F:\phpStudys\PHPTutorial\WWW\ranking\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000354s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002672s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_group_access` [ RunTime:0.303941s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `pml_auth_group_access` `aga` LEFT JOIN `pml_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.083149s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_rule` [ RunTime:0.063256s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `pml_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002633s ]
+---------------------------------------------------------------
+[ 2019-03-09T10:30:28+08:00 ] 127.0.0.1 GET www.pml.com/admin/dashboard?addtabs=1
+[运行时间：0.690239s] [吞吐率：1.45req/s] [内存消耗：3,327.25kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002313s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pml.com/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003444s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ F:\phpStudys\PHPTutorial\WWW\ranking\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000943s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004179s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_group_access` [ RunTime:0.033982s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `pml_auth_group_access` `aga` LEFT JOIN `pml_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_rule` [ RunTime:0.029638s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `pml_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.105041s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` WHERE  `status` = '1'  AND `pay_status` = '1' LIMIT 1 [ RunTime:0.035084s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_projcet` WHERE  `status` = '1'  AND `pay_status` = '1'  AND `endtime` BETWEEN '2019-03-09 00:00:00' AND '2019-03-16 00:00:00' LIMIT 1 [ RunTime:0.002264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_worder` [ RunTime:0.087787s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_worder` WHERE  `status` = '0' LIMIT 1 [ RunTime:0.002566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_invoice` [ RunTime:0.066800s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_invoice` WHERE  `status` = '0' LIMIT 1 [ RunTime:0.001906s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `pml_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001282s ]
+---------------------------------------------------------------
+[ 2019-03-09T10:30:28+08:00 ] 127.0.0.1 GET www.pml.com/admin/ajax/lang?callback=define&controllername=dashboard&v=1552098627
+[运行时间：0.064959s] [吞吐率：15.39req/s] [内存消耗：2,377.99kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002821s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pml.com/admin/dashboard?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1552098627',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001418s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudys\PHPTutorial\WWW\ranking\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000315s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T10:30:28+08:00 ] 127.0.0.1 GET www.pml.com/admin/ajax/lang?callback=define&controllername=index&v=1552098625
+[运行时间：0.040861s] [吞吐率：24.47req/s] [内存消耗：2,379.37kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000047s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002351s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.pml.com/admin/index/index',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1552098625',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002386s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ F:\phpStudys\PHPTutorial\WWW\ranking\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000332s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:46:57+08:00 ] 127.0.0.1 GET www.pml.com/api/user/add_address
+[运行时间：0.217224s] [吞吐率：4.60req/s] [内存消耗：2,636.87kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000286s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010558s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'add_address',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002676s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067543s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007501s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000641s ]
+---------------------------------------------------------------
+[ 2019-03-09T14:47:54+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.108059s] [吞吐率：9.25req/s] [内存消耗：2,558.24kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002979s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:52:06+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.052568s] [吞吐率：19.02req/s] [内存消耗：2,625.36kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001887s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002359s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:52:30+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.057117s] [吞吐率：17.51req/s] [内存消耗：2,558.57kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002096s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001337s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:53:00+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.047999s] [吞吐率：20.83req/s] [内存消耗：2,558.72kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002602s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002262s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:53:00+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.042751s] [吞吐率：23.39req/s] [内存消耗：2,558.72kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001786s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001319s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:53:05+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.042034s] [吞吐率：23.79req/s] [内存消耗：2,558.57kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001890s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001810s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:56:04+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.044427s] [吞吐率：22.51req/s] [内存消耗：2,625.30kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000192s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001726s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001803s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:56:05+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.041282s] [吞吐率：24.22req/s] [内存消耗：2,625.36kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001850s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001922s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:56:39+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.052986s] [吞吐率：18.87req/s] [内存消耗：2,625.36kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001279s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001415s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:56:39+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.039398s] [吞吐率：25.38req/s] [内存消耗：2,625.36kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001685s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001221s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:56:39+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.042176s] [吞吐率：23.71req/s] [内存消耗：2,625.36kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001275s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001446s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:56:40+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.037524s] [吞吐率：26.65req/s] [内存消耗：2,625.36kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001259s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001201s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:56:52+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.058376s] [吞吐率：17.13req/s] [内存消耗：2,625.36kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002059s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001996s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:56:53+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.042773s] [吞吐率：23.38req/s] [内存消耗：2,625.36kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001332s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001460s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:56:53+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.036044s] [吞吐率：27.74req/s] [内存消耗：2,625.36kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001907s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001411s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T14:59:09+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.069597s] [吞吐率：14.37req/s] [内存消耗：2,625.38kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002224s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002114s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T15:00:55+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.044632s] [吞吐率：22.41req/s] [内存消耗：2,625.53kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001848s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001669s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T15:03:32+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.047513s] [吞吐率：21.05req/s] [内存消耗：2,625.59kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000275s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003276s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001972s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T15:03:33+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.043456s] [吞吐率：23.01req/s] [内存消耗：2,625.53kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001380s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001312s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T15:03:33+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.037860s] [吞吐率：26.41req/s] [内存消耗：2,625.53kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001331s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001205s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T15:03:33+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.043747s] [吞吐率：22.86req/s] [内存消耗：2,625.53kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002101s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002135s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T15:03:33+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.047133s] [吞吐率：21.22req/s] [内存消耗：2,625.53kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001801s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T15:25:38+08:00 ] 127.0.0.1 POST www.pml.com/api/sms/send
+[运行时间：0.260775s] [吞吐率：3.83req/s] [内存消耗：2,908.00kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000186s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001721s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'sms',
+    2 => 'send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary7fM1LEsWUA8FP2J1',
+  'accept' => '*/*',
+  'content-length' => '248',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18521940531',
+  'event' => 'register',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001737s ]
+[ info ] [ RUN ] app\api\controller\Sms->send[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Sms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026078s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_sms` [ RunTime:0.032676s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_sms` WHERE  `mobile` = '18521940531'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_sms` WHERE  `ip` = '127.0.0.1'  AND `createtime` >  1552112738 LIMIT 1 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.009208s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `mobile` = '18521940531' LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] INSERT INTO `pml_sms` (`mobile` , `event` , `code` , `ip` , `createtime`) VALUES ('18521940531' , 'register' , '572698' , '127.0.0.1' , 1552116338) [ RunTime:0.093660s ]
+---------------------------------------------------------------
+[ 2019-03-09T15:26:21+08:00 ] 127.0.0.1 POST www.pml.com/api/user/register
+[运行时间：0.396271s] [吞吐率：2.52req/s] [内存消耗：2,711.07kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002785s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryykXJNyHUU9aqcnS6',
+  'accept' => '*/*',
+  'content-length' => '447',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'xlh',
+  'password' => '123456',
+  'mobile' => '18521940531',
+  'captcha' => '572698',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001198s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002866s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_sms` [ RunTime:0.008102s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_sms` WHERE  `mobile` = '18521940531'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_coupon` [ RunTime:0.007209s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_coupon` WHERE  `id` = 1  AND `type` = '0' LIMIT 1 [ RunTime:0.022380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.030475s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `username` = 'xlh' LIMIT 1 [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `mobile` = '18521940531' LIMIT 1 [ RunTime:0.001066s ]
+[ sql ] [ SQL ] INSERT INTO `pml_user` (`username` , `password` , `email` , `mobile` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `verification` , `createtime` , `updatetime`) VALUES ('xlh' , 'bce2479876fda5b076e7902fed29fb77' , '' , '18521940531' , 1 , 0 , '' , 'xlh' , 'xLVkXQ' , 1552116380 , '127.0.0.1' , 1552116380 , '127.0.0.1' , 1552116380 , 'normal' , '75b4705b-5a0b-4ae8-9790-8852a6a27301' , 1552116380 , 1552116380) [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.009453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.060363s ]
+[ sql ] [ SQL ] INSERT INTO `pml_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('264d696279114f245e4626fc964dca27abdcacae' , 12 , 1552116381 , 1554708381) [ RunTime:0.079915s ]
+---------------------------------------------------------------
+[ 2019-03-09T15:27:24+08:00 ] 127.0.0.1 POST www.pml.com/api/user/register
+[运行时间：0.149289s] [吞吐率：6.70req/s] [内存消耗：2,673.31kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002280s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryhtA1xXA5Jx0V5LGo',
+  'accept' => '*/*',
+  'content-length' => '447',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'xlh',
+  'password' => '123456',
+  'mobile' => '18521940531',
+  'captcha' => '572698',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004251s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003280s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_sms` [ RunTime:0.039191s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_sms` WHERE  `mobile` = '18521940531'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_coupon` [ RunTime:0.022045s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_coupon` WHERE  `id` = 1  AND `type` = '0' LIMIT 1 [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.022233s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `username` = 'xlh' LIMIT 1 [ RunTime:0.000939s ]
+---------------------------------------------------------------
+[ 2019-03-09T15:27:40+08:00 ] 127.0.0.1 POST www.pml.com/api/user/register
+[运行时间：0.211340s] [吞吐率：4.73req/s] [内存消耗：2,693.08kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003342s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryfptwtHQB3qvtvZ5A',
+  'accept' => '*/*',
+  'content-length' => '447',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'xlh',
+  'password' => '123456',
+  'mobile' => '18521940531',
+  'captcha' => '572698',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001760s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002538s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_sms` [ RunTime:0.083824s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_sms` WHERE  `mobile` = '18521940531'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] DELETE FROM `pml_sms`    WHERE  `mobile` = '18521940531'  AND `event` = 'register' [ RunTime:0.072587s ]
+---------------------------------------------------------------
+[ 2019-03-09T15:27:56+08:00 ] 127.0.0.1 POST www.pml.com/api/sms/send
+[运行时间：0.109542s] [吞吐率：9.13req/s] [内存消耗：2,900.81kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002421s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'sms',
+    2 => 'send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryTLeBB8ZavMV7tGTl',
+  'accept' => '*/*',
+  'content-length' => '248',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18521940531',
+  'event' => 'register',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003221s ]
+[ info ] [ RUN ] app\api\controller\Sms->send[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Sms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003038s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_sms` [ RunTime:0.020670s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_sms` WHERE  `mobile` = '18521940531'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_sms` WHERE  `ip` = '127.0.0.1'  AND `createtime` >  1552112876 LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.008587s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `mobile` = '18521940531' LIMIT 1 [ RunTime:0.000884s ]
+---------------------------------------------------------------
+[ 2019-03-09T15:28:45+08:00 ] 127.0.0.1 POST www.pml.com/api/sms/send
+[运行时间：0.147957s] [吞吐率：6.76req/s] [内存消耗：2,908.20kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002329s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'sms',
+    2 => 'send',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNMXEYkejwiERLklY',
+  'accept' => '*/*',
+  'content-length' => '248',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18521940531',
+  'event' => 'register',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003196s ]
+[ info ] [ RUN ] app\api\controller\Sms->send[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Sms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002619s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_sms` [ RunTime:0.008734s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_sms` WHERE  `mobile` = '18521940531'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_sms` WHERE  `ip` = '127.0.0.1'  AND `createtime` >  1552112925 LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.008898s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `mobile` = '18521940531' LIMIT 1 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] INSERT INTO `pml_sms` (`mobile` , `event` , `code` , `ip` , `createtime`) VALUES ('18521940531' , 'register' , '934567' , '127.0.0.1' , 1552116525) [ RunTime:0.050504s ]
+---------------------------------------------------------------
+[ 2019-03-09T15:29:12+08:00 ] 127.0.0.1 POST www.pml.com/api/user/register
+[运行时间：0.232954s] [吞吐率：4.29req/s] [内存消耗：2,711.30kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001732s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryF7YCc01luMqt5Uj5',
+  'accept' => '*/*',
+  'content-length' => '447',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'xlh',
+  'password' => '123456',
+  'mobile' => '18521940531',
+  'captcha' => '934567',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001655s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002442s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_sms` [ RunTime:0.007623s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_sms` WHERE  `mobile` = '18521940531'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_coupon` [ RunTime:0.006341s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_coupon` WHERE  `id` = 1  AND `type` = '0' LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005655s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `username` = 'xlh' LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `mobile` = '18521940531' LIMIT 1 [ RunTime:0.000930s ]
+[ sql ] [ SQL ] INSERT INTO `pml_user` (`username` , `password` , `email` , `mobile` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `verification` , `createtime` , `updatetime`) VALUES ('xlh' , '1791d3c6a723ba1452e7e937a11bb033' , '' , '18521940531' , 1 , 0 , '' , 'xlh' , 'ibQNBv' , 1552116552 , '127.0.0.1' , 1552116552 , '127.0.0.1' , 1552116552 , 'normal' , 'e5d2af62-a2db-4993-b1dc-884167fe31c7' , 1552116552 , 1552116552) [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.033087s ]
+[ sql ] [ SQL ] INSERT INTO `pml_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('c8c07c821c1d95d85bb52cd2203b5531d2963ff1' , 13 , 1552116552 , 1554708552) [ RunTime:0.059727s ]
+---------------------------------------------------------------
+[ 2019-03-09T16:51:46+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.050133s] [吞吐率：19.95req/s] [内存消耗：2,625.75kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000279s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003494s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002208s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T16:51:47+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.044332s] [吞吐率：22.56req/s] [内存消耗：2,625.70kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001904s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001378s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T16:51:47+08:00 ] 127.0.0.1 GET www.pml.com/api/user/register
+[运行时间：0.049818s] [吞吐率：20.07req/s] [内存消耗：2,625.70kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002191s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003024s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->register[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T16:51:50+08:00 ] 127.0.0.1 GET www.pml.com/api/user/login
+[运行时间：0.050255s] [吞吐率：19.90req/s] [内存消耗：2,625.29kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000073s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002688s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002124s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T17:37:47+08:00 ] 127.0.0.1 POST www.pml.com/api/common/upload
+[运行时间：0.075114s] [吞吐率：13.31req/s] [内存消耗：2,324.59kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000264s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002963s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryMrPDO5gYAs4zGWqh',
+  'accept' => '*/*',
+  'content-length' => '41096',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002981s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022184s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.009028s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+[ 2019-03-09T17:38:32+08:00 ] 127.0.0.1 POST www.pml.com/api/common/upload
+[运行时间：0.068190s] [吞吐率：14.66req/s] [内存消耗：2,324.66kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001338s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarypPaVvPcYjs57I8T9',
+  'accept' => '*/*',
+  'content-length' => '41096',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001170s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013569s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006511s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000580s ]
+---------------------------------------------------------------
+[ 2019-03-09T17:38:33+08:00 ] 127.0.0.1 POST www.pml.com/api/common/upload
+[运行时间：0.075306s] [吞吐率：13.28req/s] [内存消耗：2,324.66kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001723s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHfyDWLb5DaLEj4Gt',
+  'accept' => '*/*',
+  'content-length' => '41096',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001951s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002609s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.028823s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000557s ]
+---------------------------------------------------------------
+[ 2019-03-09T17:39:58+08:00 ] 127.0.0.1 POST www.pml.com/api/common/upload
+[运行时间：0.310413s] [吞吐率：3.22req/s] [内存消耗：2,692.03kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003057s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'common',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary3qEcy9KgMzsX31DA',
+  'accept' => '*/*',
+  'content-length' => '41096',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002145s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/common.php
+[ info ] [ RUN ] app\api\controller\Common->upload[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003106s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_attachment` [ RunTime:0.109358s ]
+[ sql ] [ SQL ] INSERT INTO `pml_attachment` (`filesize` , `imagewidth` , `imageheight` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (40815 , '359' , '378' , 'png' , 'image/png' , '/uploads/20190309/63e8179ee11f1e2d96cd759c402796a1.png' , 1552124398 , 'local' , '840ad3b89bd23df86d6f8342e94b590b39af8e66' , 1552124398 , 1552124398) [ RunTime:0.046432s ]
+---------------------------------------------------------------
+[ 2019-03-09T17:41:40+08:00 ] 127.0.0.1 POST www.pml.com/api/user/login
+[运行时间：0.064705s] [吞吐率：15.45req/s] [内存消耗：2,558.62kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001620s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryEn2GIEWsbZea1uRC',
+  'accept' => '*/*',
+  'content-length' => '244',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'shuai',
+  'password' => '123456',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001394s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-09T17:44:10+08:00 ] 127.0.0.1 POST www.pml.com/api/user/login
+[运行时间：0.232158s] [吞吐率：4.31req/s] [内存消耗：2,758.77kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001859s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1552098604; PHPSESSID=fm66fm31k15t8bnf36r3h267i2',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryG1B0EdL2DFSMIA9x',
+  'accept' => '*/*',
+  'content-length' => '244',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'shuai',
+  'password' => '123456',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002761s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002622s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007632s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `username` = 'shuai' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] UPDATE `pml_user`  SET `prevtime`=1551864861,`logintime`=1552124650,`updatetime`=1552124650  WHERE  `id` = 11 [ RunTime:0.038574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.018061s ]
+[ sql ] [ SQL ] INSERT INTO `pml_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('2b4900e9fdacc7ce87dc994ee6cef9cee9b84932' , 11 , 1552124650 , 1554716650) [ RunTime:0.059405s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '2b4900e9fdacc7ce87dc994ee6cef9cee9b84932' LIMIT 1 [ RunTime:0.000606s ]

@@ -1,0 +1,212 @@
+---------------------------------------------------------------
+[ 2019-06-11T21:07:40+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/ajax/lang?callback=define&controllername=worder&v=1560258459
+[运行时间：0.153486s] [吞吐率：6.52req/s] [内存消耗：2,943.99kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000883s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559630506; PHPSESSID=tscd6oej77mu8duisr0cndgic4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/worder?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'worder',
+  'v' => '1560258459',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001232s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/worder.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000103s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T21:07:40+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/ajax/lang?callback=define&controllername=complaint&v=1560258460
+[运行时间：0.029555s] [吞吐率：33.84req/s] [内存消耗：2,943.64kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000795s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559630506; PHPSESSID=tscd6oej77mu8duisr0cndgic4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/complaint?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'complaint',
+  'v' => '1560258460',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001130s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/complaint.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000065s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T21:07:41+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/complaint/index?sort=id&order=desc&offset=0&limit=10&_=1560258458650
+[运行时间：0.063108s] [吞吐率：15.85req/s] [内存消耗：4,211.89kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000849s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'complaint',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559630506; PHPSESSID=tscd6oej77mu8duisr0cndgic4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/complaint?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  '_' => '1560258458650',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001129s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/complaint.php
+[ info ] [ RUN ] app\admin\controller\Complaint->index[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/admin/controller/Complaint.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000079s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004395s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_group_access` [ RunTime:0.003327s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `pml_auth_group_access` `aga` LEFT JOIN `pml_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002908s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_rule` [ RunTime:0.003213s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `pml_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_complaint` [ RunTime:0.003200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.003320s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_complaint` `complaint` LEFT JOIN `pml_user` `user` ON `complaint`.`user_id`=`user`.`id` ORDER BY `complaint`.`id` DESC LIMIT 1 [ RunTime:0.002992s ]
+[ sql ] [ SQL ] SELECT `complaint`.`id`,`complaint`.`user_id`,`complaint`.`username`,`complaint`.`title`,`complaint`.`content`,`complaint`.`images`,`complaint`.`status`,`complaint`.`phone`,`complaint`.`num`,`complaint`.`create_time`,user.id AS user__id,user.group_id AS user__group_id,user.username AS user__username,user.nickname AS user__nickname,user.password AS user__password,user.salt AS user__salt,user.email AS user__email,user.mobile AS user__mobile,user.avatar AS user__avatar,user.level AS user__level,user.gender AS user__gender,user.birthday AS user__birthday,user.bio AS user__bio,user.money AS user__money,user.score AS user__score,user.successions AS user__successions,user.maxsuccessions AS user__maxsuccessions,user.prevtime AS user__prevtime,user.logintime AS user__logintime,user.loginip AS user__loginip,user.loginfailure AS user__loginfailure,user.joinip AS user__joinip,user.jointime AS user__jointime,user.createtime AS user__createtime,user.updatetime AS user__updatetime,user.token AS user__token,user.status AS user__status,user.verification AS user__verification FROM `pml_complaint` `complaint` LEFT JOIN `pml_user` `user` ON `complaint`.`user_id`=`user`.`id` ORDER BY `complaint`.`id` DESC LIMIT 0,10 [ RunTime:0.003151s ]
+---------------------------------------------------------------
+[ 2019-06-11T22:22:42+08:00 ] 203.209.239.108 POST pml.zhihuo.com.cn/api/Finance/ap/
+[运行时间：0.062532s] [吞吐率：15.99req/s] [内存消耗：3,283.52kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000875s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Finance',
+    2 => 'ap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded; charset=utf-8',
+  'user-agent' => 'Mozilla/4.0',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-length' => '1057',
+)
+[ info ] [ PARAM ] array (
+  'us' => '32',
+  'gmt_create' => '2019-06-10 21:53:01',
+  'charset' => 'utf-8',
+  'gmt_payment' => '2019-06-10 21:53:07',
+  'notify_time' => '2019-06-11 22:22:42',
+  'subject' => '充值订单',
+  'sign' => 'bWHm5XjBWVh7YRX/BqFoqVk1zZKgnhrk3/8u5H5wZ8KJgTtOUw4kaM9wqgjiXBKCz2ETrdVUEnex+g4rrExu5RFzhwDhWeJyY3COmuA/ITRW+aLhq0A06JgRiE166fdxMbXLkNpakX6sQH7GMbTiuMeDoGDYEOs8+R3lt1rjKvbgTvGpC9RuePqZOuxcRQjELUr61WYTxvTIm8KBvSurJq6NJeUI8NV1UcJI7Ad9xctgpFaO5ctb3Tqrmpq665+xwWTO0x8l6Ka52T+px3z4p+zqLq6XITogYzyzs7MQ/lOP+84ghPCv2yB/iZG8V+Fl791lqxeLExLztISR0pmoQA==',
+  'buyer_id' => '2088722079427192',
+  'invoice_amount' => '0.01',
+  'version' => '1.0',
+  'notify_id' => '2019061000222215307027191033500856',
+  'fund_bill_list' => '[{"amount":"0.01","fundChannel":"ALIPAYACCOUNT"}]',
+  'notify_type' => 'trade_status_sync',
+  'out_trade_no' => 'RE20190610215248_ZDeQgjVbj',
+  'total_amount' => '0.01',
+  'trade_status' => 'TRADE_SUCCESS',
+  'trade_no' => '2019061022001427191044076656',
+  'auth_app_id' => '2017121500825147',
+  'receipt_amount' => '0.01',
+  'point_amount' => '0.00',
+  'app_id' => '2017121500825147',
+  'buyer_pay_amount' => '0.01',
+  'sign_type' => 'RSA2',
+  'seller_id' => '2088611763361211',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001170s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Finance->ap[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Finance.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006882s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.005168s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  (  id="32" ) LIMIT 1 [ RunTime:0.004787s ]
+[ sql ] [ SQL ] UPDATE `pml_user`  SET `money`=99994650.13  WHERE  (  id="32" ) [ RunTime:0.010187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_recharge` [ RunTime:0.004987s ]
+[ sql ] [ SQL ] INSERT INTO `pml_recharge` (`user_id` , `username` , `money` , `status` , `account_money` , `recharge_num` , `remarks` , `type`) VALUES (32 , 'Will' , 0.01 , '1' , 99994650.13 , 'RE20190610215248_ZDeQgjVbj' , '在线充值' , '1') [ RunTime:0.004661s ]

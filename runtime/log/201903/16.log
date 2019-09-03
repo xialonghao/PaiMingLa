@@ -1,0 +1,1993 @@
+---------------------------------------------------------------
+[ 2019-03-16T12:00:11+08:00 ] 127.0.0.1 POST www.pml.com/api/user/mobilelogin
+[运行时间：0.123799s] [吞吐率：8.08req/s] [内存消耗：2,709.38kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000274s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002213s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'mobilelogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryXe5QqTqExWFvBtm6',
+  'accept' => '*/*',
+  'content-length' => '249',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18151856107',
+  'captcha' => '1236456',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002076s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->mobilelogin[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017514s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_sms` [ RunTime:0.022229s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_sms` WHERE  `mobile` = '18151856107'  AND `event` = 'login' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000667s ]
+---------------------------------------------------------------
+[ 2019-03-16T12:00:21+08:00 ] 127.0.0.1 POST www.pml.com/api/user/mobilelogin
+[运行时间：0.055578s] [吞吐率：17.99req/s] [内存消耗：2,709.49kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001710s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'mobilelogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryYGmcOcOroLqVdRou',
+  'accept' => '*/*',
+  'content-length' => '249',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '18151856107',
+  'captcha' => '1236456',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001414s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->mobilelogin[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002833s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_sms` [ RunTime:0.006740s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_sms` WHERE  `mobile` = '18151856107'  AND `event` = 'login' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[ 2019-03-16T12:00:30+08:00 ] 127.0.0.1 POST www.pml.com/api/user/login
+[运行时间：0.193234s] [吞吐率：5.18req/s] [内存消耗：2,773.77kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001366s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNP5ZtQPiJfcpd1Bc',
+  'accept' => '*/*',
+  'content-length' => '244',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'shuai',
+  'password' => '123456',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001742s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\User.php ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002115s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.008696s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `username` = 'shuai' LIMIT 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] UPDATE `pml_user`  SET `successions`=5,`maxsuccessions`=5,`prevtime`=1552642404,`logintime`=1552708830,`updatetime`=1552708830  WHERE  `id` = 11 [ RunTime:0.055144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.008014s ]
+[ sql ] [ SQL ] INSERT INTO `pml_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('1af4ff1c0457d4755927c0dff20bb566569ce26d' , 11 , 1552708830 , 1555300830) [ RunTime:0.064767s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000563s ]
+---------------------------------------------------------------
+[ 2019-03-16T12:02:29+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.048949s] [吞吐率：20.43req/s] [内存消耗：2,627.45kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002225s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary4ylzjBjaii2v65AI',
+  'accept' => '*/*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001339s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002466s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007117s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2019-03-16T12:03:00+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.109567s] [吞吐率：9.13req/s] [内存消耗：2,754.95kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002596s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryqRXAln3uF24FXcNT',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001477s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002269s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006687s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007789s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.032484s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.014201s ]
+---------------------------------------------------------------
+[ 2019-03-16T13:55:24+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.130941s] [吞吐率：7.64req/s] [内存消耗：2,779.36kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000179s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001645s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNJwCN8GCSSn8WhCv',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001693s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020601s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.008839s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006462s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007466s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'a.name' doesn't exist[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:00:32+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.085864s] [吞吐率：11.65req/s] [内存消耗：2,721.50kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001649s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHZWTjHLjAuNeVb3f',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001877s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002854s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007674s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006753s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007537s ]
+[ sql ] [ SQL ] SELECT a.name as titname FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.001264s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:00:54+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.073089s] [吞吐率：13.68req/s] [内存消耗：2,706.55kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001304s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryegpMUeOmG0jNZQ8n',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001613s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011382s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007338s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006993s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006366s ]
+[ sql ] [ SQL ] SELECT a.name as titname FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000754s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:02:17+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.072917s] [吞吐率：13.71req/s] [内存消耗：2,780.05kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001330s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary686weUR8CnkSlLq5',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001289s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002407s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007046s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007520s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006659s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:02:32+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.072739s] [吞吐率：13.75req/s] [内存消耗：2,672.14kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000047s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002086s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBAUbbqi6v41y9zUC',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002332s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002573s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007657s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006339s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007456s ]
+[ sql ] [ SQL ] SELECT count(a.name) FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000628s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:10:20+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.100242s] [吞吐率：9.98req/s] [内存消耗：2,706.34kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000192s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002206s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarygcnSATpGrNfEXW3S',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002834s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024590s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.008440s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.008263s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.008448s ]
+[ sql ] [ SQL ] SELECT `a`.`name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000562s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:12:40+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.081034s] [吞吐率：12.34req/s] [内存消耗：2,780.08kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002228s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryVtklOXYpwI9FSh35',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001357s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002392s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007287s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007636s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006422s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.name' in 'field list'[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:13:11+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.071994s] [吞吐率：13.89req/s] [内存消耗：2,779.77kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001356s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryUUM6LNjfYSZUrJdS',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001246s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002460s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006475s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007507s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006609s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000874s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:17:57+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.105434s] [吞吐率：9.48req/s] [内存消耗：2,707.03kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000265s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002138s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryZ4Ro34ueoFkgkYB2',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001607s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018451s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007825s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006757s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006061s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,`c`.`name` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000493s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:18:19+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.079572s] [吞吐率：12.57req/s] [内存消耗：2,707.98kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001334s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarys3jMddaMZmABCXj2',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001182s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002373s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007944s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006726s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007629s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000600s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:35:16+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.093309s] [吞吐率：10.72req/s] [内存消耗：2,780.83kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000177s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001604s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary1oyiG58uRBqWIFpH',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001664s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016356s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006962s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007090s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006295s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),b.complete_days,a.channel_name,a.days,b.money FROM `pml_projcet` `a` INNER JOI' at line 1[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:47:55+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.113983s] [吞吐率：8.77req/s] [内存消耗：2,782.34kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000396s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001645s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBcIYxNe63VTScBSt',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001662s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016797s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.015997s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007318s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.022148s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),b.complete_days,a.channel_name,a.days,b.money FROM `pml_projcet` `a` INNER JOI' at line 1[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:48:20+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.031681s] [吞吐率：31.56req/s] [内存消耗：1,656.13kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003142s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryn8KqC6eRFpNUXmKD',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001164s ]
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '->' (T_OBJECT_OPERATOR)[F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php:400]
+---------------------------------------------------------------
+[ 2019-03-16T14:48:25+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.088151s] [吞吐率：11.34req/s] [内存消耗：2,782.31kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002285s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryt3JbAq4psJd9JEJV',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002061s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003314s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.008243s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.016962s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007055s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),b.complete_days,a.channel_name,a.days,b.money FROM `pml_projcet` `a` INNER JOI' at line 1[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:48:25+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.074278s] [吞吐率：13.46req/s] [内存消耗：2,782.31kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001891s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryxwOVb9v2AA8G0vK2',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001997s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002571s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007361s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007980s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007441s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),b.complete_days,a.channel_name,a.days,b.money FROM `pml_projcet` `a` INNER JOI' at line 1[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:49:03+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.081633s] [吞吐率：12.25req/s] [内存消耗：2,782.37kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002005s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryzGCtzz9p5I61CMAG',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001936s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002425s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.019479s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007506s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.005851s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),b.complete_days,a.channel_name,a.days,b.money FROM `pml_projcet` `a` INNER JOI' at line 1[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:49:24+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.073157s] [吞吐率：13.67req/s] [内存消耗：2,782.37kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001864s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarykj96NXIAqCbkNDDJ',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001335s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002193s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007514s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006634s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007325s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),b.complete_days,a.channel_name,a.days,b.money FROM `pml_projcet` `a` INNER JOI' at line 1[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:49:25+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.065733s] [吞吐率：15.21req/s] [内存消耗：2,782.37kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001539s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryJHwLHLPGEVbiYThh',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001152s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002202s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006214s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006901s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006389s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),b.complete_days,a.channel_name,a.days,b.money FROM `pml_projcet` `a` INNER JOI' at line 1[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:49:25+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.077406s] [吞吐率：12.92req/s] [内存消耗：2,782.37kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002292s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarySBRBDhvpPyXhnZrG',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001171s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002206s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.008872s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007390s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006604s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),b.complete_days,a.channel_name,a.days,b.money FROM `pml_projcet` `a` INNER JOI' at line 1[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:49:25+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.075209s] [吞吐率：13.30req/s] [内存消耗：2,782.37kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001444s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarys1UGGUzYFraqNbXh',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001146s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002233s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006955s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007619s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006892s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),b.complete_days,a.channel_name,a.days,b.money FROM `pml_projcet` `a` INNER JOI' at line 1[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:49:53+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.066152s] [吞吐率：15.12req/s] [内存消耗：2,733.50kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002129s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarye4Eyqqo1Rr1ZLsFx',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001865s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002257s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006493s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007101s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006414s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.001827s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.001320s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:50:02+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.069815s] [吞吐率：14.32req/s] [内存消耗：2,808.46kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001688s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryowODBrFatZxQucef',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001775s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002388s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006308s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006496s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006494s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000752s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.channel_name' in 'field list'[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T14:50:09+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.067350s] [吞吐率：14.85req/s] [内存消耗：2,711.83kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002042s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarytaiwqwgvtv5IZdul',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002041s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002158s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006826s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006750s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006234s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.001111s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:50:36+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.064554s] [吞吐率：15.49req/s] [内存消耗：2,691.95kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001342s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryJZpdvXaYDg4kqzVf',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001816s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002252s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007693s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006593s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006398s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.000739s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:51:15+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.144181s] [吞吐率：6.94req/s] [内存消耗：2,718.27kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002058s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryfXH3A4spkU8ClsHK',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001612s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012054s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.008652s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.039618s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.038735s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000645s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:53:30+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.079719s] [吞吐率：12.54req/s] [内存消耗：2,718.50kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003117s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryTzkATA0N8ceQvNpA',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001745s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002785s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006952s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.008194s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007368s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000670s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:53:41+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.086233s] [吞吐率：11.60req/s] [内存消耗：2,756.00kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001284s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynpZZrVa9nM1Cxh0r',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001152s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002235s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006688s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006996s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.022966s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.000704s ]
+[ error ] [0]类的属性不存在:app\admin\model\Projcet->id[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\Model.php:626]
+---------------------------------------------------------------
+[ 2019-03-16T14:53:50+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.096957s] [吞吐率：10.31req/s] [内存消耗：2,772.73kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002389s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryB6gqFFFxmnABSRFE',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002292s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002403s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007406s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.023992s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006646s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.001054s ]
+[ error ] [8]Use of undefined constant id - assumed 'id'[F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php:404]
+---------------------------------------------------------------
+[ 2019-03-16T14:53:58+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.030901s] [吞吐率：32.36req/s] [内存消耗：1,661.91kb] [文件加载：56]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002713s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary5c6RXQcKdYiIHQZH',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002341s ]
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected ''name'' (T_CONSTANT_ENCAPSED_STRING)[F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php:404]
+---------------------------------------------------------------
+[ 2019-03-16T14:54:16+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.112565s] [吞吐率：8.88req/s] [内存消耗：2,727.91kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000175s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001702s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryFaQars6oVKkGrG03',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001791s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017013s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.017573s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.011844s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.022328s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:54:32+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.068728s] [吞吐率：14.55req/s] [内存消耗：2,756.00kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002042s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary2XA7MKQvQSLmUl5k',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001766s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002252s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006655s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007096s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006648s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.001023s ]
+[ error ] [0]类的属性不存在:app\admin\model\Projcet->id[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\Model.php:626]
+---------------------------------------------------------------
+[ 2019-03-16T14:54:47+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.087253s] [吞吐率：11.46req/s] [内存消耗：2,720.16kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001313s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryssu9C9UcJYg5PG9p',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001992s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002982s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006985s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.008038s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.016865s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT `a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.000776s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:55:07+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.119617s] [吞吐率：8.36req/s] [内存消耗：2,721.44kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001607s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary2uAAYbHf7jmqi0bS',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001412s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002444s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007409s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007265s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.046608s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.000744s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:55:15+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.069043s] [吞吐率：14.48req/s] [内存消耗：2,728.52kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000033s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001633s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryIJZvMlX877TO73ha',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001237s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002256s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007776s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007058s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007164s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2019-03-16T14:55:40+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.097557s] [吞吐率：10.25req/s] [内存消耗：2,728.67kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003056s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryxIHwzbxBF76SBlO4',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001995s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004359s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.009017s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.010154s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.008885s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`name`,c.name as uname,`a`.`num`,`b`.`complete_days`,`b`.`channel_name`,`a`.`days`,`b`.`money` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.001689s ]
+---------------------------------------------------------------
+[ 2019-03-16T16:20:37+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.090086s] [吞吐率：11.10req/s] [内存消耗：2,781.88kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000181s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001724s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryzDA3X1vXANHZ2wvs',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001878s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017625s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.009273s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006430s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007540s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.complete_days' in 'field list'[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T16:22:58+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.094547s] [吞吐率：10.58req/s] [内存消耗：2,782.03kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001641s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryAZP0V9b8JsMQClfg',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001443s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002412s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.018145s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007292s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006462s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.complete_days' in 'field list'[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T16:23:09+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.078096s] [吞吐率：12.80req/s] [内存消耗：2,782.06kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001295s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryJXJytLQ15dSPXirv',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001202s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002353s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007803s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.006365s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006966s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.complete_days' in 'field list'[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T16:23:20+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.079649s] [吞吐率：12.56req/s] [内存消耗：2,781.46kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002581s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryAICuEBnwWvxjB7kQ',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001371s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002728s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.006967s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007104s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006352s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.complete_days' in 'field list'[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T16:23:25+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.081816s] [吞吐率：12.22req/s] [内存消耗：2,781.21kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002157s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryCNzvWglp6xGXWk3A',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002375s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003379s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.008163s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.008147s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.007112s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.complete_days' in 'field list'[F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-16T16:23:35+08:00 ] 127.0.0.1 POST www.pml.com/api/project/project_histoy_list
+[运行时间：0.083887s] [吞吐率：11.92req/s] [内存消耗：2,743.68kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001571s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'project',
+    2 => 'project_histoy_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarySY4xInB8ZWGtNpbd',
+  'accept' => '*/*',
+  'content-length' => '172',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '61e2a09b-f6ea-4182-a1e2-f4b72a24992b',
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001184s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/api/lang/zh-cn/project.php
+[ info ] [ RUN ] app\api\controller\Project->project_histoy_list[ F:\phpStudys\PHPTutorial\WWW\ranking\application\api\controller\Project.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002534s ] mysql:host=127.0.0.1;dbname=pml;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user_token` [ RunTime:0.007308s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_user` [ RunTime:0.007123s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_user_token` WHERE  `token` = '1af4ff1c0457d4755927c0dff20bb566569ce26d' LIMIT 1 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.006672s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` INNER JOIN `pml_keyword` `c` ON `b`.`keyword_id`=`c`.`id` WHERE  (  a.user_id="11" and a.status="2" ) GROUP BY `channel_name` [ RunTime:0.001170s ]
+---------------------------------------------------------------
+[ 2019-03-16T16:55:47+08:00 ] 127.0.0.1 GET www.pml.com/
+[运行时间：0.127609s] [吞吐率：7.84req/s] [内存消耗：2,182.81kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000304s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001709s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1552098604,1552534138',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.pml.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001904s ]
+[ info ] [ LANG ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpStudys\PHPTutorial\WWW\ranking\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpStudys\PHPTutorial\WWW\ranking\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File

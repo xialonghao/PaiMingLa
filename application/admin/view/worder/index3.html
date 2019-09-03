@@ -1,0 +1,267 @@
+
+    <link rel="stylesheet" href='./public/worder/css/will.css' media="all">
+    <link rel="stylesheet" href=./public/worder/css/iconfont.css' media="all">
+    <link rel="stylesheet" href='./public/worderlayuiadmin/layui/css/admin_will.css' media="all">
+    <link rel="stylesheet" href='./public/worder/css/will.css' media="all">
+    <div class="word-order-piece layui-row layui-col-space15 layui-fluid">
+        <div class="layui-col-md12">
+            <div class= "layui-card caiwu_diary zh_bg_white">
+                <div class="layui-card-header">
+                    <h3 style="margin: 0px">工单系统</h3>
+                </div>
+                <div class="awi-list-piece-title user-list-piece-title">
+                    <div class="layui-input-inline">
+                        <input type="text" name="keywork" placeholder="请输入工单编号" autocomplete="off"
+                               class="empty-piece layui-input" id="keywork">
+							   
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn layuiadmin-btn-list" lay-submit
+                                lay-filter="LAY-app-contlist-search" type="button" id="button">
+                            &#xe60d;
+                        </button>
+                    </div>
+                    <div class="layui-form" wid100 style="float: right">
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label class="layui-form-label"><a href="javascript:;" id="demo0">待处理</a></label>
+                                <label class="layui-form-label"><a href="javascript:;" id="demo1">处理中</a></label>
+                                <label class="layui-form-label"><a href="javascript:;" id="demo2">已解决</a></label>
+                                <!-- <label class="layui-form-label">日期范围</label> -->
+                                <div class="alluser-input-inline layui-input-inline">
+                                    <input type="text" class="empty-piece layui-input" id="test-laydate-range-date"
+                                           placeholder="开始时间" value="{{ data }}">
+										   <span class="time-icon">&#xe600;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                </div>
+                <div class="awi-card-body-piece layui-card-body">
+                    <table id="test" class="layui-hide" lay-filter="test">
+                    </table>
+                </div>
+               <span class="number-piece">待处理的工单数：{{ untreatedWorkorder }}</span>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-xs" lay-event="edit" href="#">查看</a>
+    </script>
+    <script type="text/html" id="barDemos">
+        {% verbatim %}
+        {{#  if(d.work_status == 0){ }}
+        待处理
+        {{#  } else if(d.work_status == 1){ }}
+        处理中
+        {{#  } else { }}
+        已解决
+        {{#  } }}
+        {% endverbatim %}
+    </script>
+{% endblock %}
+{% block script %}
+    <script>
+        layui.config({
+            base: "{% static 'layuiadmin/'%}" //静态资源所在路径
+        }).extend({
+            index: 'lib/index' //主入口模块
+        }).use(['index', 'laydate', 'laypage', 'table', 'element', 'form', 'upload'], function () {
+            var laydate = layui.laydate;
+            var laypage = layui.laypage;
+            var table = layui.table;
+            var element = layui.element;
+            var form = layui.form;
+            var upload = layui.upload;
+            laydate.render({
+                elem: '#test-laydate-range-date',
+                type: 'datetime',
+                range: '-',
+                format: 'yyyy/MM/dd'
+                , done: function (value) {
+                    data = {
+                        "data": value,
+                        'type': 'list',
+                        'csrfmiddlewaretoken': '{{ csrf_token }}'
+                    };
+                    $.ajax({
+                        url: '{% url "adminUser:dataInvoices" %}',
+                        type: 'POST',
+                        data: data,
+                        success: function (resp) {
+                            console.log(resp);
+                            if (resp.msg == '200') {
+                                table.reload('test', {'data': resp.data, page: {curr:1}});
+                            }
+                            else if (resp.msg == '401') {
+                                table.reload('test', {'data': resp.data, page: {curr:1}});
+                                layer.alert('没有查找到任何工单', {icon: 2})
+                            }
+                        }
+                    });
+                }
+            });
+            $('#button').click(function () {
+                var keyword = $('#keywork').val()
+                var regs = ' ';
+                if (keyword.indexOf(regs) != -1) {
+                    layer.alert('查询不能为空格！', {
+                        icon: 2,
+                        title: '错误提示'
+                    });
+                    return false;
+                }
+                data = {
+                    "keyword": keyword,
+                    'type': 'list',
+                    'csrfmiddlewaretoken': '{{ csrf_token }}'
+                };
+                $.ajax({
+                    url: '{% url "adminUser:keyQureyWorkorder" %}',
+                    type: 'POST',
+                    data: data,
+                    success: function (resp) {
+                        console.log(resp);
+                        if (resp.msg == '200') {
+                            table.reload('test', {'data': resp.data, page: {curr:1}});
+                        }
+                        else if (resp.msg == '401') {
+                            table.reload('test', {'data': resp.data, page: {curr:1}});
+                            layer.alert('没有查找到任何工单', {icon: 2})
+                        }
+                    }
+                })
+                return false;
+            })
+            $.ajax({
+                url: '{% url 'adminUser:adminWork' %}',
+                type: 'POST',
+                data: {
+                    "csrfmiddlewaretoken": "{{ csrf_token }}",
+                    "type": 'list',
+                    "key": "4"
+                },
+                success: function (resp) {
+                    console.log(resp)
+                    table.render({
+                        elem: '#test',
+                        cellMinWidth: 86
+                        , cols: [[
+                            {field: 'work_id', title: '工单编号', align: 'center', unresize: true}
+                            , {field: 'work_title', title: '工单标题', align: 'center', minWidth: 120, unresize: true}
+                            , {
+                                field: 'created_time',
+                                title: '提交时间',
+                                align: 'center',
+                                unresize: true,
+                                templet: '<div>{% verbatim %}{{ layui.util.toDateString(d.created_time,"yyyy/MM/dd HH:mm") }} {% endverbatim %}</div>',
+                            }
+                            , {field: 'work_status', title: '状态', align: 'center', unresize: true, toolbar: '#barDemos'}
+                            , {field: 'work_created_user__username', title: '创建人', align: 'center', unresize: true}
+                            , {field: 'work_dispose_user', title: '处理人', align: 'center', unresize: true}
+                            , {title: '操作', toolbar: '#barDemo', align: 'center', unresize: true}
+                        ]]
+                        , data: resp.data
+                        , page: {
+                            layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
+                            , limits: [10, 30, 50, 100]
+                            , groups: 3
+
+                        }
+                    });
+                    if (resp.data.length == 0) {
+                        $(".empty-piece").attr('placeholder', '');
+                    }
+                }
+            })
+            table.on('tool(test)', function (obj) {
+                var data = obj.data;
+                console.log(data)
+                if (data.work_status === 2) {
+                    location.href = "{% url 'adminUser:createDoneWorkorder' %}?workorderId=" + data.work_id
+                } else {
+                    location.href = "{% url 'adminUser:checkWorkorder' %}?workorderId=" + data.work_id
+                }
+
+            })
+            $('#demo0').click(function () {
+                $.ajax({
+                    url: '{% url 'adminUser:adminWork' %}',
+                    type: 'POST',
+                    data: {
+                        "csrfmiddlewaretoken": "{{ csrf_token }}",
+                        "type": 'list',
+                        "key": "0"
+                    },
+                    success: function (resp) {
+                        if (resp.msg === '200') {
+                            table.reload('test', {'data': resp.data});
+                        }
+                        else if (resp.msg === '401') {
+                            table.reload('test', {'data': resp.data});
+                            layer.alert('没有查找到任何发票', {icon: 2})
+                        }
+                    }
+                })
+            })
+            $('#demo1').click(function () {
+                $.ajax({
+                    url: '{% url 'adminUser:adminWork' %}',
+                    type: 'POST',
+                    data: {
+                        "csrfmiddlewaretoken": "{{ csrf_token }}",
+                        "type": 'list',
+                        "key": "1"
+                    },
+                    success: function (resp) {
+                        if (resp.msg === '200') {
+                            table.reload('test', {'data': resp.data});
+                        }
+                        else if (resp.msg === '401') {
+                            table.reload('test', {'data': resp.data});
+                            layer.alert('没有查找到任何发票', {icon: 2})
+                        }
+                    }
+                })
+            })
+            $('#demo2').click(function () {
+                $.ajax({
+                    url: '{% url 'adminUser:adminWork' %}',
+                    type: 'POST',
+                    data: {
+                        "csrfmiddlewaretoken": "{{ csrf_token }}",
+                        "type": 'list',
+                        "key": "2"
+                    },
+                    success: function (resp) {
+                        if (resp.msg === '200') {
+                            table.reload('test', {'data': resp.data});
+                        }
+                        else if (resp.msg === '401') {
+                            table.reload('test', {'data': resp.data});
+                            layer.alert('没有查找到任何发票', {icon: 2})
+                        }
+                    }
+                })
+            })
+        })
+    </script>
+    <script>
+        window.onload = function () {
+            if ('300' =={{ code }}) {
+                layer.alert('未找到相关内容,请重新搜索！', {
+                    icon: 2,
+                    title: '错误提示'
+                });
+            }
+        }
+        $(function () {
+            $(".word-order-piece .layui-form-label").click(function () {
+                $(this).siblings('.word-order-piece .layui-form-label').removeClass('on');  // 删除其他兄弟元素的样式
+                $(this).addClass('on');                            // 添加当前元素的样式
+            });
+        });
+    </script>
+{% endblock %}

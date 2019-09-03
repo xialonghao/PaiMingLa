@@ -1,0 +1,652 @@
+---------------------------------------------------------------
+[ 2019-06-17T13:48:15+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/Pandect/month_recharge
+[运行时间：6.547171s] [吞吐率：0.15req/s] [内存消耗：4,403.83kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001097s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Pandect',
+    2 => 'month_recharge',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1559390010%7C3eb670026305db5689c7f52470fb740d; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559212242,1559697832,1559786795,1560588034; PHPSESSID=1gia6lgblfaeoeh1t9ugteqoig; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1560594010',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/dashboard?addtabs=1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001761s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Pandect->month_recharge[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/admin/controller/Pandect.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000080s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005650s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_group_access` [ RunTime:0.004295s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `pml_auth_group_access` `aga` LEFT JOIN `pml_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_auth_rule` [ RunTime:0.004268s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `pml_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.005712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_consumption` [ RunTime:0.004282s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `pml_consumption` LIMIT 1 [ RunTime:0.003693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_recharge` [ RunTime:0.004089s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-1 00:00:00'< create_time and create_time < '2019-01-1 23:59:00' ) [ RunTime:0.003750s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-2 00:00:00'< create_time and create_time < '2019-01-2 23:59:00' ) [ RunTime:0.003721s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-3 00:00:00'< create_time and create_time < '2019-01-3 23:59:00' ) [ RunTime:0.003738s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-4 00:00:00'< create_time and create_time < '2019-01-4 23:59:00' ) [ RunTime:0.003740s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-5 00:00:00'< create_time and create_time < '2019-01-5 23:59:00' ) [ RunTime:0.003736s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-6 00:00:00'< create_time and create_time < '2019-01-6 23:59:00' ) [ RunTime:0.003811s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-7 00:00:00'< create_time and create_time < '2019-01-7 23:59:00' ) [ RunTime:0.003826s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-8 00:00:00'< create_time and create_time < '2019-01-8 23:59:00' ) [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-9 00:00:00'< create_time and create_time < '2019-01-9 23:59:00' ) [ RunTime:0.003755s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-10 00:00:00'< create_time and create_time < '2019-01-10 23:59:00' ) [ RunTime:0.003745s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-11 00:00:00'< create_time and create_time < '2019-01-11 23:59:00' ) [ RunTime:0.003784s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-12 00:00:00'< create_time and create_time < '2019-01-12 23:59:00' ) [ RunTime:0.003784s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-13 00:00:00'< create_time and create_time < '2019-01-13 23:59:00' ) [ RunTime:0.003753s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-14 00:00:00'< create_time and create_time < '2019-01-14 23:59:00' ) [ RunTime:0.003853s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-15 00:00:00'< create_time and create_time < '2019-01-15 23:59:00' ) [ RunTime:0.003830s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-16 00:00:00'< create_time and create_time < '2019-01-16 23:59:00' ) [ RunTime:0.003757s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-17 00:00:00'< create_time and create_time < '2019-01-17 23:59:00' ) [ RunTime:0.003758s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-18 00:00:00'< create_time and create_time < '2019-01-18 23:59:00' ) [ RunTime:0.003780s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-19 00:00:00'< create_time and create_time < '2019-01-19 23:59:00' ) [ RunTime:0.003860s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-20 00:00:00'< create_time and create_time < '2019-01-20 23:59:00' ) [ RunTime:0.003814s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-21 00:00:00'< create_time and create_time < '2019-01-21 23:59:00' ) [ RunTime:0.003774s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-22 00:00:00'< create_time and create_time < '2019-01-22 23:59:00' ) [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-23 00:00:00'< create_time and create_time < '2019-01-23 23:59:00' ) [ RunTime:0.003776s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-24 00:00:00'< create_time and create_time < '2019-01-24 23:59:00' ) [ RunTime:0.003762s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-25 00:00:00'< create_time and create_time < '2019-01-25 23:59:00' ) [ RunTime:0.003776s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-26 00:00:00'< create_time and create_time < '2019-01-26 23:59:00' ) [ RunTime:0.003757s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-27 00:00:00'< create_time and create_time < '2019-01-27 23:59:00' ) [ RunTime:0.003757s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-28 00:00:00'< create_time and create_time < '2019-01-28 23:59:00' ) [ RunTime:0.003852s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-29 00:00:00'< create_time and create_time < '2019-01-29 23:59:00' ) [ RunTime:0.003830s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-01-30 00:00:00'< create_time and create_time < '2019-01-30 23:59:00' ) [ RunTime:0.003753s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-1 00:00:00'< create_time and create_time < '2019-02-1 23:59:00' ) [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-2 00:00:00'< create_time and create_time < '2019-02-2 23:59:00' ) [ RunTime:0.003754s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-3 00:00:00'< create_time and create_time < '2019-02-3 23:59:00' ) [ RunTime:0.003761s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-4 00:00:00'< create_time and create_time < '2019-02-4 23:59:00' ) [ RunTime:0.003747s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-5 00:00:00'< create_time and create_time < '2019-02-5 23:59:00' ) [ RunTime:0.003795s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-6 00:00:00'< create_time and create_time < '2019-02-6 23:59:00' ) [ RunTime:0.003790s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-7 00:00:00'< create_time and create_time < '2019-02-7 23:59:00' ) [ RunTime:0.003774s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-8 00:00:00'< create_time and create_time < '2019-02-8 23:59:00' ) [ RunTime:0.003748s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-9 00:00:00'< create_time and create_time < '2019-02-9 23:59:00' ) [ RunTime:0.003744s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-10 00:00:00'< create_time and create_time < '2019-02-10 23:59:00' ) [ RunTime:0.003815s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-11 00:00:00'< create_time and create_time < '2019-02-11 23:59:00' ) [ RunTime:0.003761s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-12 00:00:00'< create_time and create_time < '2019-02-12 23:59:00' ) [ RunTime:0.003770s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-13 00:00:00'< create_time and create_time < '2019-02-13 23:59:00' ) [ RunTime:0.003761s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-14 00:00:00'< create_time and create_time < '2019-02-14 23:59:00' ) [ RunTime:0.003735s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-15 00:00:00'< create_time and create_time < '2019-02-15 23:59:00' ) [ RunTime:0.003747s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-16 00:00:00'< create_time and create_time < '2019-02-16 23:59:00' ) [ RunTime:0.003773s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-17 00:00:00'< create_time and create_time < '2019-02-17 23:59:00' ) [ RunTime:0.003762s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-18 00:00:00'< create_time and create_time < '2019-02-18 23:59:00' ) [ RunTime:0.003739s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-19 00:00:00'< create_time and create_time < '2019-02-19 23:59:00' ) [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-20 00:00:00'< create_time and create_time < '2019-02-20 23:59:00' ) [ RunTime:0.003740s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-21 00:00:00'< create_time and create_time < '2019-02-21 23:59:00' ) [ RunTime:0.003748s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-22 00:00:00'< create_time and create_time < '2019-02-22 23:59:00' ) [ RunTime:0.003770s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-23 00:00:00'< create_time and create_time < '2019-02-23 23:59:00' ) [ RunTime:0.003768s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-24 00:00:00'< create_time and create_time < '2019-02-24 23:59:00' ) [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-25 00:00:00'< create_time and create_time < '2019-02-25 23:59:00' ) [ RunTime:0.003823s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-26 00:00:00'< create_time and create_time < '2019-02-26 23:59:00' ) [ RunTime:0.003776s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-27 00:00:00'< create_time and create_time < '2019-02-27 23:59:00' ) [ RunTime:0.003763s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-28 00:00:00'< create_time and create_time < '2019-02-28 23:59:00' ) [ RunTime:0.003756s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-29 00:00:00'< create_time and create_time < '2019-02-29 23:59:00' ) [ RunTime:0.003757s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-02-30 00:00:00'< create_time and create_time < '2019-02-30 23:59:00' ) [ RunTime:0.003772s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-1 00:00:00'< create_time and create_time < '2019-03-1 23:59:00' ) [ RunTime:0.205753s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-2 00:00:00'< create_time and create_time < '2019-03-2 23:59:00' ) [ RunTime:0.003874s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-3 00:00:00'< create_time and create_time < '2019-03-3 23:59:00' ) [ RunTime:0.003800s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-4 00:00:00'< create_time and create_time < '2019-03-4 23:59:00' ) [ RunTime:0.003768s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-5 00:00:00'< create_time and create_time < '2019-03-5 23:59:00' ) [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-6 00:00:00'< create_time and create_time < '2019-03-6 23:59:00' ) [ RunTime:0.003754s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-7 00:00:00'< create_time and create_time < '2019-03-7 23:59:00' ) [ RunTime:0.003852s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-8 00:00:00'< create_time and create_time < '2019-03-8 23:59:00' ) [ RunTime:0.003793s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-9 00:00:00'< create_time and create_time < '2019-03-9 23:59:00' ) [ RunTime:0.003759s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-10 00:00:00'< create_time and create_time < '2019-03-10 23:59:00' ) [ RunTime:0.003999s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-11 00:00:00'< create_time and create_time < '2019-03-11 23:59:00' ) [ RunTime:0.003808s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-12 00:00:00'< create_time and create_time < '2019-03-12 23:59:00' ) [ RunTime:0.003851s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-13 00:00:00'< create_time and create_time < '2019-03-13 23:59:00' ) [ RunTime:0.003776s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-14 00:00:00'< create_time and create_time < '2019-03-14 23:59:00' ) [ RunTime:0.003753s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-15 00:00:00'< create_time and create_time < '2019-03-15 23:59:00' ) [ RunTime:0.003812s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-16 00:00:00'< create_time and create_time < '2019-03-16 23:59:00' ) [ RunTime:0.003822s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-17 00:00:00'< create_time and create_time < '2019-03-17 23:59:00' ) [ RunTime:0.003772s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-18 00:00:00'< create_time and create_time < '2019-03-18 23:59:00' ) [ RunTime:0.003834s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-19 00:00:00'< create_time and create_time < '2019-03-19 23:59:00' ) [ RunTime:0.003761s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-20 00:00:00'< create_time and create_time < '2019-03-20 23:59:00' ) [ RunTime:0.003760s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-21 00:00:00'< create_time and create_time < '2019-03-21 23:59:00' ) [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-22 00:00:00'< create_time and create_time < '2019-03-22 23:59:00' ) [ RunTime:0.003807s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-23 00:00:00'< create_time and create_time < '2019-03-23 23:59:00' ) [ RunTime:0.003747s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-24 00:00:00'< create_time and create_time < '2019-03-24 23:59:00' ) [ RunTime:0.003749s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-25 00:00:00'< create_time and create_time < '2019-03-25 23:59:00' ) [ RunTime:0.003758s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-26 00:00:00'< create_time and create_time < '2019-03-26 23:59:00' ) [ RunTime:0.003835s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-27 00:00:00'< create_time and create_time < '2019-03-27 23:59:00' ) [ RunTime:0.003817s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-28 00:00:00'< create_time and create_time < '2019-03-28 23:59:00' ) [ RunTime:0.003806s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-29 00:00:00'< create_time and create_time < '2019-03-29 23:59:00' ) [ RunTime:0.003813s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-03-30 00:00:00'< create_time and create_time < '2019-03-30 23:59:00' ) [ RunTime:0.003778s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-1 00:00:00'< create_time and create_time < '2019-04-1 23:59:00' ) [ RunTime:0.003796s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-2 00:00:00'< create_time and create_time < '2019-04-2 23:59:00' ) [ RunTime:0.003749s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-3 00:00:00'< create_time and create_time < '2019-04-3 23:59:00' ) [ RunTime:0.003796s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-4 00:00:00'< create_time and create_time < '2019-04-4 23:59:00' ) [ RunTime:0.003741s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-5 00:00:00'< create_time and create_time < '2019-04-5 23:59:00' ) [ RunTime:0.003774s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-6 00:00:00'< create_time and create_time < '2019-04-6 23:59:00' ) [ RunTime:0.003779s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-7 00:00:00'< create_time and create_time < '2019-04-7 23:59:00' ) [ RunTime:0.003814s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-8 00:00:00'< create_time and create_time < '2019-04-8 23:59:00' ) [ RunTime:0.003764s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-9 00:00:00'< create_time and create_time < '2019-04-9 23:59:00' ) [ RunTime:0.003820s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-10 00:00:00'< create_time and create_time < '2019-04-10 23:59:00' ) [ RunTime:0.003802s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-11 00:00:00'< create_time and create_time < '2019-04-11 23:59:00' ) [ RunTime:0.003780s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-12 00:00:00'< create_time and create_time < '2019-04-12 23:59:00' ) [ RunTime:0.003759s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-13 00:00:00'< create_time and create_time < '2019-04-13 23:59:00' ) [ RunTime:0.003877s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-14 00:00:00'< create_time and create_time < '2019-04-14 23:59:00' ) [ RunTime:0.003922s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-15 00:00:00'< create_time and create_time < '2019-04-15 23:59:00' ) [ RunTime:0.003862s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-16 00:00:00'< create_time and create_time < '2019-04-16 23:59:00' ) [ RunTime:0.205511s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-17 00:00:00'< create_time and create_time < '2019-04-17 23:59:00' ) [ RunTime:0.003943s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-18 00:00:00'< create_time and create_time < '2019-04-18 23:59:00' ) [ RunTime:0.004005s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-19 00:00:00'< create_time and create_time < '2019-04-19 23:59:00' ) [ RunTime:0.003775s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-20 00:00:00'< create_time and create_time < '2019-04-20 23:59:00' ) [ RunTime:0.003776s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-21 00:00:00'< create_time and create_time < '2019-04-21 23:59:00' ) [ RunTime:0.003765s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-22 00:00:00'< create_time and create_time < '2019-04-22 23:59:00' ) [ RunTime:0.003760s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-23 00:00:00'< create_time and create_time < '2019-04-23 23:59:00' ) [ RunTime:0.003730s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-24 00:00:00'< create_time and create_time < '2019-04-24 23:59:00' ) [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-25 00:00:00'< create_time and create_time < '2019-04-25 23:59:00' ) [ RunTime:0.003727s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-26 00:00:00'< create_time and create_time < '2019-04-26 23:59:00' ) [ RunTime:0.003860s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-27 00:00:00'< create_time and create_time < '2019-04-27 23:59:00' ) [ RunTime:0.003825s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-28 00:00:00'< create_time and create_time < '2019-04-28 23:59:00' ) [ RunTime:0.003826s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-29 00:00:00'< create_time and create_time < '2019-04-29 23:59:00' ) [ RunTime:0.003819s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-04-30 00:00:00'< create_time and create_time < '2019-04-30 23:59:00' ) [ RunTime:0.003751s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-1 00:00:00'< create_time and create_time < '2019-05-1 23:59:00' ) [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-2 00:00:00'< create_time and create_time < '2019-05-2 23:59:00' ) [ RunTime:0.003804s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-3 00:00:00'< create_time and create_time < '2019-05-3 23:59:00' ) [ RunTime:0.003765s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-4 00:00:00'< create_time and create_time < '2019-05-4 23:59:00' ) [ RunTime:0.003766s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-5 00:00:00'< create_time and create_time < '2019-05-5 23:59:00' ) [ RunTime:0.003837s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-6 00:00:00'< create_time and create_time < '2019-05-6 23:59:00' ) [ RunTime:0.003818s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-7 00:00:00'< create_time and create_time < '2019-05-7 23:59:00' ) [ RunTime:0.003816s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-8 00:00:00'< create_time and create_time < '2019-05-8 23:59:00' ) [ RunTime:0.003835s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-9 00:00:00'< create_time and create_time < '2019-05-9 23:59:00' ) [ RunTime:0.003804s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-10 00:00:00'< create_time and create_time < '2019-05-10 23:59:00' ) [ RunTime:0.003769s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-11 00:00:00'< create_time and create_time < '2019-05-11 23:59:00' ) [ RunTime:0.003857s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-12 00:00:00'< create_time and create_time < '2019-05-12 23:59:00' ) [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-13 00:00:00'< create_time and create_time < '2019-05-13 23:59:00' ) [ RunTime:0.003765s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-14 00:00:00'< create_time and create_time < '2019-05-14 23:59:00' ) [ RunTime:0.003781s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-15 00:00:00'< create_time and create_time < '2019-05-15 23:59:00' ) [ RunTime:0.003826s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-16 00:00:00'< create_time and create_time < '2019-05-16 23:59:00' ) [ RunTime:0.003750s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-17 00:00:00'< create_time and create_time < '2019-05-17 23:59:00' ) [ RunTime:0.003778s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-18 00:00:00'< create_time and create_time < '2019-05-18 23:59:00' ) [ RunTime:0.003770s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-19 00:00:00'< create_time and create_time < '2019-05-19 23:59:00' ) [ RunTime:0.003753s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-20 00:00:00'< create_time and create_time < '2019-05-20 23:59:00' ) [ RunTime:0.003769s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-21 00:00:00'< create_time and create_time < '2019-05-21 23:59:00' ) [ RunTime:0.003752s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-22 00:00:00'< create_time and create_time < '2019-05-22 23:59:00' ) [ RunTime:0.003833s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-23 00:00:00'< create_time and create_time < '2019-05-23 23:59:00' ) [ RunTime:0.003762s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-24 00:00:00'< create_time and create_time < '2019-05-24 23:59:00' ) [ RunTime:0.003845s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-25 00:00:00'< create_time and create_time < '2019-05-25 23:59:00' ) [ RunTime:0.003829s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-26 00:00:00'< create_time and create_time < '2019-05-26 23:59:00' ) [ RunTime:0.003827s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-27 00:00:00'< create_time and create_time < '2019-05-27 23:59:00' ) [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-28 00:00:00'< create_time and create_time < '2019-05-28 23:59:00' ) [ RunTime:0.003786s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-29 00:00:00'< create_time and create_time < '2019-05-29 23:59:00' ) [ RunTime:0.004009s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-05-30 00:00:00'< create_time and create_time < '2019-05-30 23:59:00' ) [ RunTime:0.003785s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-1 00:00:00'< create_time and create_time < '2019-06-1 23:59:00' ) [ RunTime:0.003818s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-2 00:00:00'< create_time and create_time < '2019-06-2 23:59:00' ) [ RunTime:0.003845s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-3 00:00:00'< create_time and create_time < '2019-06-3 23:59:00' ) [ RunTime:0.205620s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-4 00:00:00'< create_time and create_time < '2019-06-4 23:59:00' ) [ RunTime:0.004247s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-5 00:00:00'< create_time and create_time < '2019-06-5 23:59:00' ) [ RunTime:0.003830s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-6 00:00:00'< create_time and create_time < '2019-06-6 23:59:00' ) [ RunTime:0.003855s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-7 00:00:00'< create_time and create_time < '2019-06-7 23:59:00' ) [ RunTime:0.003814s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-8 00:00:00'< create_time and create_time < '2019-06-8 23:59:00' ) [ RunTime:0.003803s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-9 00:00:00'< create_time and create_time < '2019-06-9 23:59:00' ) [ RunTime:0.003806s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-10 00:00:00'< create_time and create_time < '2019-06-10 23:59:00' ) [ RunTime:0.003895s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-11 00:00:00'< create_time and create_time < '2019-06-11 23:59:00' ) [ RunTime:0.003863s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-12 00:00:00'< create_time and create_time < '2019-06-12 23:59:00' ) [ RunTime:0.003810s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-13 00:00:00'< create_time and create_time < '2019-06-13 23:59:00' ) [ RunTime:0.003803s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-14 00:00:00'< create_time and create_time < '2019-06-14 23:59:00' ) [ RunTime:0.003856s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-15 00:00:00'< create_time and create_time < '2019-06-15 23:59:00' ) [ RunTime:0.003835s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-16 00:00:00'< create_time and create_time < '2019-06-16 23:59:00' ) [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-17 00:00:00'< create_time and create_time < '2019-06-17 23:59:00' ) [ RunTime:0.003833s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-18 00:00:00'< create_time and create_time < '2019-06-18 23:59:00' ) [ RunTime:0.003860s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-19 00:00:00'< create_time and create_time < '2019-06-19 23:59:00' ) [ RunTime:0.003848s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-20 00:00:00'< create_time and create_time < '2019-06-20 23:59:00' ) [ RunTime:0.003792s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-21 00:00:00'< create_time and create_time < '2019-06-21 23:59:00' ) [ RunTime:0.003790s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-22 00:00:00'< create_time and create_time < '2019-06-22 23:59:00' ) [ RunTime:0.003829s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-23 00:00:00'< create_time and create_time < '2019-06-23 23:59:00' ) [ RunTime:0.003798s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-24 00:00:00'< create_time and create_time < '2019-06-24 23:59:00' ) [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-25 00:00:00'< create_time and create_time < '2019-06-25 23:59:00' ) [ RunTime:0.003779s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-26 00:00:00'< create_time and create_time < '2019-06-26 23:59:00' ) [ RunTime:0.003813s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-27 00:00:00'< create_time and create_time < '2019-06-27 23:59:00' ) [ RunTime:0.003826s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-28 00:00:00'< create_time and create_time < '2019-06-28 23:59:00' ) [ RunTime:0.003845s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-29 00:00:00'< create_time and create_time < '2019-06-29 23:59:00' ) [ RunTime:0.003799s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-06-30 00:00:00'< create_time and create_time < '2019-06-30 23:59:00' ) [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-1 00:00:00'< create_time and create_time < '2019-07-1 23:59:00' ) [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-2 00:00:00'< create_time and create_time < '2019-07-2 23:59:00' ) [ RunTime:0.003802s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-3 00:00:00'< create_time and create_time < '2019-07-3 23:59:00' ) [ RunTime:0.003779s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-4 00:00:00'< create_time and create_time < '2019-07-4 23:59:00' ) [ RunTime:0.003868s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-5 00:00:00'< create_time and create_time < '2019-07-5 23:59:00' ) [ RunTime:0.003792s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-6 00:00:00'< create_time and create_time < '2019-07-6 23:59:00' ) [ RunTime:0.003804s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-7 00:00:00'< create_time and create_time < '2019-07-7 23:59:00' ) [ RunTime:0.003813s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-8 00:00:00'< create_time and create_time < '2019-07-8 23:59:00' ) [ RunTime:0.205651s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-9 00:00:00'< create_time and create_time < '2019-07-9 23:59:00' ) [ RunTime:0.003962s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-10 00:00:00'< create_time and create_time < '2019-07-10 23:59:00' ) [ RunTime:0.003862s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-11 00:00:00'< create_time and create_time < '2019-07-11 23:59:00' ) [ RunTime:0.003786s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-12 00:00:00'< create_time and create_time < '2019-07-12 23:59:00' ) [ RunTime:0.003831s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-13 00:00:00'< create_time and create_time < '2019-07-13 23:59:00' ) [ RunTime:0.003949s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-14 00:00:00'< create_time and create_time < '2019-07-14 23:59:00' ) [ RunTime:0.003806s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-15 00:00:00'< create_time and create_time < '2019-07-15 23:59:00' ) [ RunTime:0.003875s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-16 00:00:00'< create_time and create_time < '2019-07-16 23:59:00' ) [ RunTime:0.003796s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-17 00:00:00'< create_time and create_time < '2019-07-17 23:59:00' ) [ RunTime:0.003824s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-18 00:00:00'< create_time and create_time < '2019-07-18 23:59:00' ) [ RunTime:0.003837s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-19 00:00:00'< create_time and create_time < '2019-07-19 23:59:00' ) [ RunTime:0.003792s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-20 00:00:00'< create_time and create_time < '2019-07-20 23:59:00' ) [ RunTime:0.003798s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-21 00:00:00'< create_time and create_time < '2019-07-21 23:59:00' ) [ RunTime:0.003901s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-22 00:00:00'< create_time and create_time < '2019-07-22 23:59:00' ) [ RunTime:0.003809s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-23 00:00:00'< create_time and create_time < '2019-07-23 23:59:00' ) [ RunTime:0.003885s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-24 00:00:00'< create_time and create_time < '2019-07-24 23:59:00' ) [ RunTime:0.003845s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-25 00:00:00'< create_time and create_time < '2019-07-25 23:59:00' ) [ RunTime:0.003847s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-26 00:00:00'< create_time and create_time < '2019-07-26 23:59:00' ) [ RunTime:0.003847s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-27 00:00:00'< create_time and create_time < '2019-07-27 23:59:00' ) [ RunTime:0.003901s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-28 00:00:00'< create_time and create_time < '2019-07-28 23:59:00' ) [ RunTime:0.003834s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-29 00:00:00'< create_time and create_time < '2019-07-29 23:59:00' ) [ RunTime:0.003800s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-07-30 00:00:00'< create_time and create_time < '2019-07-30 23:59:00' ) [ RunTime:0.003787s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-1 00:00:00'< create_time and create_time < '2019-08-1 23:59:00' ) [ RunTime:0.003810s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-2 00:00:00'< create_time and create_time < '2019-08-2 23:59:00' ) [ RunTime:0.003790s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-3 00:00:00'< create_time and create_time < '2019-08-3 23:59:00' ) [ RunTime:0.003801s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-4 00:00:00'< create_time and create_time < '2019-08-4 23:59:00' ) [ RunTime:0.003860s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-5 00:00:00'< create_time and create_time < '2019-08-5 23:59:00' ) [ RunTime:0.003925s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-6 00:00:00'< create_time and create_time < '2019-08-6 23:59:00' ) [ RunTime:0.003794s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-7 00:00:00'< create_time and create_time < '2019-08-7 23:59:00' ) [ RunTime:0.003793s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-8 00:00:00'< create_time and create_time < '2019-08-8 23:59:00' ) [ RunTime:0.003840s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-9 00:00:00'< create_time and create_time < '2019-08-9 23:59:00' ) [ RunTime:0.003828s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-10 00:00:00'< create_time and create_time < '2019-08-10 23:59:00' ) [ RunTime:0.003762s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-11 00:00:00'< create_time and create_time < '2019-08-11 23:59:00' ) [ RunTime:0.003793s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-12 00:00:00'< create_time and create_time < '2019-08-12 23:59:00' ) [ RunTime:0.003806s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-13 00:00:00'< create_time and create_time < '2019-08-13 23:59:00' ) [ RunTime:0.003790s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-14 00:00:00'< create_time and create_time < '2019-08-14 23:59:00' ) [ RunTime:0.205541s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-15 00:00:00'< create_time and create_time < '2019-08-15 23:59:00' ) [ RunTime:0.003967s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-16 00:00:00'< create_time and create_time < '2019-08-16 23:59:00' ) [ RunTime:0.003843s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-17 00:00:00'< create_time and create_time < '2019-08-17 23:59:00' ) [ RunTime:0.003794s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-18 00:00:00'< create_time and create_time < '2019-08-18 23:59:00' ) [ RunTime:0.004017s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-19 00:00:00'< create_time and create_time < '2019-08-19 23:59:00' ) [ RunTime:0.003799s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-20 00:00:00'< create_time and create_time < '2019-08-20 23:59:00' ) [ RunTime:0.003815s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-21 00:00:00'< create_time and create_time < '2019-08-21 23:59:00' ) [ RunTime:0.003800s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-22 00:00:00'< create_time and create_time < '2019-08-22 23:59:00' ) [ RunTime:0.003867s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-23 00:00:00'< create_time and create_time < '2019-08-23 23:59:00' ) [ RunTime:0.003831s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-24 00:00:00'< create_time and create_time < '2019-08-24 23:59:00' ) [ RunTime:0.003949s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-25 00:00:00'< create_time and create_time < '2019-08-25 23:59:00' ) [ RunTime:0.003793s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-26 00:00:00'< create_time and create_time < '2019-08-26 23:59:00' ) [ RunTime:0.003809s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-27 00:00:00'< create_time and create_time < '2019-08-27 23:59:00' ) [ RunTime:0.003868s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-28 00:00:00'< create_time and create_time < '2019-08-28 23:59:00' ) [ RunTime:0.003830s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-29 00:00:00'< create_time and create_time < '2019-08-29 23:59:00' ) [ RunTime:0.003794s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-08-30 00:00:00'< create_time and create_time < '2019-08-30 23:59:00' ) [ RunTime:0.003845s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-1 00:00:00'< create_time and create_time < '2019-09-1 23:59:00' ) [ RunTime:0.003878s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-2 00:00:00'< create_time and create_time < '2019-09-2 23:59:00' ) [ RunTime:0.003915s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-3 00:00:00'< create_time and create_time < '2019-09-3 23:59:00' ) [ RunTime:0.003882s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-4 00:00:00'< create_time and create_time < '2019-09-4 23:59:00' ) [ RunTime:0.003901s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-5 00:00:00'< create_time and create_time < '2019-09-5 23:59:00' ) [ RunTime:0.003913s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-6 00:00:00'< create_time and create_time < '2019-09-6 23:59:00' ) [ RunTime:0.003812s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-7 00:00:00'< create_time and create_time < '2019-09-7 23:59:00' ) [ RunTime:0.003809s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-8 00:00:00'< create_time and create_time < '2019-09-8 23:59:00' ) [ RunTime:0.003889s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-9 00:00:00'< create_time and create_time < '2019-09-9 23:59:00' ) [ RunTime:0.003845s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-10 00:00:00'< create_time and create_time < '2019-09-10 23:59:00' ) [ RunTime:0.003838s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-11 00:00:00'< create_time and create_time < '2019-09-11 23:59:00' ) [ RunTime:0.003891s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-12 00:00:00'< create_time and create_time < '2019-09-12 23:59:00' ) [ RunTime:0.003834s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-13 00:00:00'< create_time and create_time < '2019-09-13 23:59:00' ) [ RunTime:0.004231s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-14 00:00:00'< create_time and create_time < '2019-09-14 23:59:00' ) [ RunTime:0.003874s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-15 00:00:00'< create_time and create_time < '2019-09-15 23:59:00' ) [ RunTime:0.003888s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-16 00:00:00'< create_time and create_time < '2019-09-16 23:59:00' ) [ RunTime:0.205460s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-17 00:00:00'< create_time and create_time < '2019-09-17 23:59:00' ) [ RunTime:0.003974s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-18 00:00:00'< create_time and create_time < '2019-09-18 23:59:00' ) [ RunTime:0.003833s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-19 00:00:00'< create_time and create_time < '2019-09-19 23:59:00' ) [ RunTime:0.003840s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-20 00:00:00'< create_time and create_time < '2019-09-20 23:59:00' ) [ RunTime:0.003809s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-21 00:00:00'< create_time and create_time < '2019-09-21 23:59:00' ) [ RunTime:0.003792s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-22 00:00:00'< create_time and create_time < '2019-09-22 23:59:00' ) [ RunTime:0.003789s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-23 00:00:00'< create_time and create_time < '2019-09-23 23:59:00' ) [ RunTime:0.003807s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-24 00:00:00'< create_time and create_time < '2019-09-24 23:59:00' ) [ RunTime:0.003791s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-25 00:00:00'< create_time and create_time < '2019-09-25 23:59:00' ) [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-26 00:00:00'< create_time and create_time < '2019-09-26 23:59:00' ) [ RunTime:0.003772s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-27 00:00:00'< create_time and create_time < '2019-09-27 23:59:00' ) [ RunTime:0.003781s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-28 00:00:00'< create_time and create_time < '2019-09-28 23:59:00' ) [ RunTime:0.003802s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-29 00:00:00'< create_time and create_time < '2019-09-29 23:59:00' ) [ RunTime:0.003794s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-09-30 00:00:00'< create_time and create_time < '2019-09-30 23:59:00' ) [ RunTime:0.003799s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-1 00:00:00'< create_time and create_time < '2019-10-1 23:59:00' ) [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-2 00:00:00'< create_time and create_time < '2019-10-2 23:59:00' ) [ RunTime:0.003779s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-3 00:00:00'< create_time and create_time < '2019-10-3 23:59:00' ) [ RunTime:0.003797s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-4 00:00:00'< create_time and create_time < '2019-10-4 23:59:00' ) [ RunTime:0.003828s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-5 00:00:00'< create_time and create_time < '2019-10-5 23:59:00' ) [ RunTime:0.003819s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-6 00:00:00'< create_time and create_time < '2019-10-6 23:59:00' ) [ RunTime:0.003823s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-7 00:00:00'< create_time and create_time < '2019-10-7 23:59:00' ) [ RunTime:0.003843s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-8 00:00:00'< create_time and create_time < '2019-10-8 23:59:00' ) [ RunTime:0.003802s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-9 00:00:00'< create_time and create_time < '2019-10-9 23:59:00' ) [ RunTime:0.003794s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-10 00:00:00'< create_time and create_time < '2019-10-10 23:59:00' ) [ RunTime:0.003825s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-11 00:00:00'< create_time and create_time < '2019-10-11 23:59:00' ) [ RunTime:0.003798s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-12 00:00:00'< create_time and create_time < '2019-10-12 23:59:00' ) [ RunTime:0.003802s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-13 00:00:00'< create_time and create_time < '2019-10-13 23:59:00' ) [ RunTime:0.003783s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-14 00:00:00'< create_time and create_time < '2019-10-14 23:59:00' ) [ RunTime:0.003833s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-15 00:00:00'< create_time and create_time < '2019-10-15 23:59:00' ) [ RunTime:0.003888s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-16 00:00:00'< create_time and create_time < '2019-10-16 23:59:00' ) [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-17 00:00:00'< create_time and create_time < '2019-10-17 23:59:00' ) [ RunTime:0.003816s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-18 00:00:00'< create_time and create_time < '2019-10-18 23:59:00' ) [ RunTime:0.003869s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-19 00:00:00'< create_time and create_time < '2019-10-19 23:59:00' ) [ RunTime:0.003875s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-20 00:00:00'< create_time and create_time < '2019-10-20 23:59:00' ) [ RunTime:0.003765s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-21 00:00:00'< create_time and create_time < '2019-10-21 23:59:00' ) [ RunTime:0.205036s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-22 00:00:00'< create_time and create_time < '2019-10-22 23:59:00' ) [ RunTime:0.003993s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-23 00:00:00'< create_time and create_time < '2019-10-23 23:59:00' ) [ RunTime:0.004081s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-24 00:00:00'< create_time and create_time < '2019-10-24 23:59:00' ) [ RunTime:0.003837s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-25 00:00:00'< create_time and create_time < '2019-10-25 23:59:00' ) [ RunTime:0.003827s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-26 00:00:00'< create_time and create_time < '2019-10-26 23:59:00' ) [ RunTime:0.003799s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-27 00:00:00'< create_time and create_time < '2019-10-27 23:59:00' ) [ RunTime:0.003810s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-28 00:00:00'< create_time and create_time < '2019-10-28 23:59:00' ) [ RunTime:0.003791s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-29 00:00:00'< create_time and create_time < '2019-10-29 23:59:00' ) [ RunTime:0.003776s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-10-30 00:00:00'< create_time and create_time < '2019-10-30 23:59:00' ) [ RunTime:0.003767s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-1 00:00:00'< create_time and create_time < '2019-11-1 23:59:00' ) [ RunTime:0.003749s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-2 00:00:00'< create_time and create_time < '2019-11-2 23:59:00' ) [ RunTime:0.003803s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-3 00:00:00'< create_time and create_time < '2019-11-3 23:59:00' ) [ RunTime:0.003780s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-4 00:00:00'< create_time and create_time < '2019-11-4 23:59:00' ) [ RunTime:0.003760s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-5 00:00:00'< create_time and create_time < '2019-11-5 23:59:00' ) [ RunTime:0.003772s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-6 00:00:00'< create_time and create_time < '2019-11-6 23:59:00' ) [ RunTime:0.003803s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-7 00:00:00'< create_time and create_time < '2019-11-7 23:59:00' ) [ RunTime:0.003769s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-8 00:00:00'< create_time and create_time < '2019-11-8 23:59:00' ) [ RunTime:0.003766s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-9 00:00:00'< create_time and create_time < '2019-11-9 23:59:00' ) [ RunTime:0.003745s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-10 00:00:00'< create_time and create_time < '2019-11-10 23:59:00' ) [ RunTime:0.003803s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-11 00:00:00'< create_time and create_time < '2019-11-11 23:59:00' ) [ RunTime:0.003735s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-12 00:00:00'< create_time and create_time < '2019-11-12 23:59:00' ) [ RunTime:0.003779s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-13 00:00:00'< create_time and create_time < '2019-11-13 23:59:00' ) [ RunTime:0.003760s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-14 00:00:00'< create_time and create_time < '2019-11-14 23:59:00' ) [ RunTime:0.003737s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-15 00:00:00'< create_time and create_time < '2019-11-15 23:59:00' ) [ RunTime:0.205295s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-16 00:00:00'< create_time and create_time < '2019-11-16 23:59:00' ) [ RunTime:0.003908s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-17 00:00:00'< create_time and create_time < '2019-11-17 23:59:00' ) [ RunTime:0.003730s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-18 00:00:00'< create_time and create_time < '2019-11-18 23:59:00' ) [ RunTime:0.003734s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-19 00:00:00'< create_time and create_time < '2019-11-19 23:59:00' ) [ RunTime:0.003719s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-20 00:00:00'< create_time and create_time < '2019-11-20 23:59:00' ) [ RunTime:0.003713s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-21 00:00:00'< create_time and create_time < '2019-11-21 23:59:00' ) [ RunTime:0.003730s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-22 00:00:00'< create_time and create_time < '2019-11-22 23:59:00' ) [ RunTime:0.003722s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-23 00:00:00'< create_time and create_time < '2019-11-23 23:59:00' ) [ RunTime:0.003753s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-24 00:00:00'< create_time and create_time < '2019-11-24 23:59:00' ) [ RunTime:0.003706s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-25 00:00:00'< create_time and create_time < '2019-11-25 23:59:00' ) [ RunTime:0.003705s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-26 00:00:00'< create_time and create_time < '2019-11-26 23:59:00' ) [ RunTime:0.003709s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-27 00:00:00'< create_time and create_time < '2019-11-27 23:59:00' ) [ RunTime:0.003732s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-28 00:00:00'< create_time and create_time < '2019-11-28 23:59:00' ) [ RunTime:0.003784s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-29 00:00:00'< create_time and create_time < '2019-11-29 23:59:00' ) [ RunTime:0.003743s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-11-30 00:00:00'< create_time and create_time < '2019-11-30 23:59:00' ) [ RunTime:0.003754s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-1 00:00:00'< create_time and create_time < '2019-12-1 23:59:00' ) [ RunTime:0.003740s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-2 00:00:00'< create_time and create_time < '2019-12-2 23:59:00' ) [ RunTime:0.003731s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-3 00:00:00'< create_time and create_time < '2019-12-3 23:59:00' ) [ RunTime:0.003714s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-4 00:00:00'< create_time and create_time < '2019-12-4 23:59:00' ) [ RunTime:0.003714s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-5 00:00:00'< create_time and create_time < '2019-12-5 23:59:00' ) [ RunTime:0.003704s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-6 00:00:00'< create_time and create_time < '2019-12-6 23:59:00' ) [ RunTime:0.003718s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-7 00:00:00'< create_time and create_time < '2019-12-7 23:59:00' ) [ RunTime:0.003720s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-8 00:00:00'< create_time and create_time < '2019-12-8 23:59:00' ) [ RunTime:0.003723s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-9 00:00:00'< create_time and create_time < '2019-12-9 23:59:00' ) [ RunTime:0.003721s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-10 00:00:00'< create_time and create_time < '2019-12-10 23:59:00' ) [ RunTime:0.003761s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-11 00:00:00'< create_time and create_time < '2019-12-11 23:59:00' ) [ RunTime:0.003733s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-12 00:00:00'< create_time and create_time < '2019-12-12 23:59:00' ) [ RunTime:0.003735s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-13 00:00:00'< create_time and create_time < '2019-12-13 23:59:00' ) [ RunTime:0.003768s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-14 00:00:00'< create_time and create_time < '2019-12-14 23:59:00' ) [ RunTime:0.003774s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-15 00:00:00'< create_time and create_time < '2019-12-15 23:59:00' ) [ RunTime:0.003766s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-16 00:00:00'< create_time and create_time < '2019-12-16 23:59:00' ) [ RunTime:0.003763s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-17 00:00:00'< create_time and create_time < '2019-12-17 23:59:00' ) [ RunTime:0.003753s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-18 00:00:00'< create_time and create_time < '2019-12-18 23:59:00' ) [ RunTime:0.003754s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-19 00:00:00'< create_time and create_time < '2019-12-19 23:59:00' ) [ RunTime:0.003762s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-20 00:00:00'< create_time and create_time < '2019-12-20 23:59:00' ) [ RunTime:0.003751s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-21 00:00:00'< create_time and create_time < '2019-12-21 23:59:00' ) [ RunTime:0.003794s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-22 00:00:00'< create_time and create_time < '2019-12-22 23:59:00' ) [ RunTime:0.003752s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-23 00:00:00'< create_time and create_time < '2019-12-23 23:59:00' ) [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-24 00:00:00'< create_time and create_time < '2019-12-24 23:59:00' ) [ RunTime:0.205249s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-25 00:00:00'< create_time and create_time < '2019-12-25 23:59:00' ) [ RunTime:0.004042s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-26 00:00:00'< create_time and create_time < '2019-12-26 23:59:00' ) [ RunTime:0.003795s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-27 00:00:00'< create_time and create_time < '2019-12-27 23:59:00' ) [ RunTime:0.003777s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-28 00:00:00'< create_time and create_time < '2019-12-28 23:59:00' ) [ RunTime:0.003763s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-29 00:00:00'< create_time and create_time < '2019-12-29 23:59:00' ) [ RunTime:0.003852s ]
+[ sql ] [ SQL ] SELECT * FROM `pml_recharge` WHERE  (  '2019-12-30 00:00:00'< create_time and create_time < '2019-12-30 23:59:00' ) [ RunTime:0.003898s ]
+---------------------------------------------------------------
+[ 2019-06-17T13:49:54+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/ajax/lang?callback=define&controllername=dashboard&v=1560750488
+[运行时间：99.381358s] [吞吐率：0.01req/s] [内存消耗：2,947.20kb] [文件加载：70]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000854s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1559390010%7C3eb670026305db5689c7f52470fb740d; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559212242,1559697832,1559786795,1560588034; PHPSESSID=1gia6lgblfaeoeh1t9ugteqoig; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1560594010',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/dashboard?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1560750488',
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001233s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000093s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-17T13:49:54+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/Pandect/month_kh
+[运行时间：0.023187s] [吞吐率：43.13req/s] [内存消耗：1,795.83kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001265s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '502',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1559390010%7C3eb670026305db5689c7f52470fb740d; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559212242,1559697832,1559786795,1560588034; PHPSESSID=1gia6lgblfaeoeh1t9ugteqoig; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1560594010',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/dashboard?addtabs=1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-17T13:49:55+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/pandect/reach_graph
+[运行时间：0.021400s] [吞吐率：46.73req/s] [内存消耗：1,795.84kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001281s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '502',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1559390010%7C3eb670026305db5689c7f52470fb740d; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559212242,1559697832,1559786795,1560588034; PHPSESSID=1gia6lgblfaeoeh1t9ugteqoig; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1560594010',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/dashboard?addtabs=1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-17T13:49:55+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/ajax/lang?callback=define&controllername=index&v=1560750488
+[运行时间：0.032871s] [吞吐率：30.42req/s] [内存消耗：1,795.31kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001102s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '502',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1559390010%7C3eb670026305db5689c7f52470fb740d; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559212242,1559697832,1559786795,1560588034; PHPSESSID=1gia6lgblfaeoeh1t9ugteqoig; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1560594010',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-17T13:49:55+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/Pandect/channel
+[运行时间：0.065175s] [吞吐率：15.34req/s] [内存消耗：1,795.73kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001233s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '502',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1559390010%7C3eb670026305db5689c7f52470fb740d; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559212242,1559697832,1559786795,1560588034; PHPSESSID=1gia6lgblfaeoeh1t9ugteqoig; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1560594010',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/dashboard?addtabs=1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-17T13:49:55+08:00 ] 103.214.85.218 GET pml.zhihuo.com.cn/admin/Pandect/month_consumption
+[运行时间：0.050375s] [吞吐率：19.85req/s] [内存消耗：1,795.86kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001104s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '502',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1559390010%7C3eb670026305db5689c7f52470fb740d; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1559212242,1559697832,1559786795,1560588034; PHPSESSID=1gia6lgblfaeoeh1t9ugteqoig; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1560594010',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://pml.zhihuo.com.cn/admin/dashboard?addtabs=1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'pml.zhihuo.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-17T16:56:03+08:00 ] 106.15.230.197 GET pml.zhihuo.com.cn/api/Startranking/paiming
+[运行时间：2.140872s] [吞吐率：0.47req/s] [内存消耗：4,598.84kb] [文件加载：78]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000799s ]
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Startranking',
+    2 => 'paiming',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'pml.zhihuo.com.cn',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/pml_zhihuo_com_cn/pml/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001153s ]
+[ info ] [ RUN ] app\api\controller\Startranking->paiming[ /www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Startranking.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006021s ] mysql:host=106.15.230.197;dbname=pml_zhihuo_com_c;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `pml_projcet` [ RunTime:0.004511s ]
+[ sql ] [ SQL ] SELECT `b`.`id`,`b`.`keyword_name`,`b`.`channel_name`,`channel_id`,`a`.`address`,`a`.`days`,`b`.`create_time`,`project_id`,`b`.`reach_count`,`b`.`star_ranking` FROM `pml_projcet` `a` INNER JOIN `pml_order` `b` ON `a`.`id`=`b`.`project_id` WHERE  (  a.status="1" and a.pay_status="1" ) [ RunTime:0.018411s ]
+[ error ] [8]未定义数组索引: parame[/www/wwwroot/pml_zhihuo_com_cn/pml/application/api/controller/Project.php:1659]

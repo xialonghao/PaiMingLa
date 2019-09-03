@@ -1,0 +1,127 @@
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+    font-family: "微软雅黑";
+}
+.header {
+    margin: 0;
+    background: #FFF;
+    height: 80px;
+    line-height: 80px;
+    border: 1px solid #DBE0EC;
+    color: #333;
+    font-size: 16px;
+}
+.bg_pay{
+    background: #E3E8F6;
+}
+.header .title {
+    margin: 0 auto;
+    width: 118px;
+    background: url(../images/weixin.png) left center no-repeat;
+    padding: 0 0 0 62px;
+}
+.main {
+    width: 960px;
+    margin: 30px auto 35px auto;
+}
+.main .top {
+    height: 9px;
+    background: url(../images/top.png) 0 0 no-repeat;
+}
+.main .title {
+    height: 80px;
+    line-height: 80px;
+    padding: 0 97px 0 153px;
+    font-size: 18px;
+    background: #FFF;
+    border-color: #DDE2ED;
+    border-style: solid;
+    border-width: 0 1px;
+}
+.main .title label,
+.main .title span {
+    color: #E0151B;
+}
+.main .title label {
+    font-size: 12px;
+}
+.main .middle {
+    border-color: #DDE2ED;
+    border-style: solid;
+    border-width: 0 1px;
+    background: #FFF;
+    padding: 0 97px;
+}
+.main .middle .content {
+    border-top: 1px dashed #F0F0F0;
+    padding: 35px 35px 20px 35px;
+}
+.main .middle .content:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.code {
+    float: left;
+    width: 218px;
+    height: 218px;
+}
+.code img{
+    max-width: 100%;
+}
+.middle ul {
+    margin: 16px 0 0 263px;
+}
+.middle ul label {
+    color: #999;
+}
+.middle li {
+    list-style: none;
+    line-height: 38px;
+}
+.bottom {
+    background: url(../images/bottom.png) no-repeat;
+    height: 43px;
+}
+.footer {
+    padding: 0;
+    height: 75px;
+    border-color: #DDE2ED;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    background-color: #FFF;
+    color: #CCC;
+    text-align: center;
+}
+.footer p {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+}
+.error {
+    height: 200px;
+    background: #FFF;
+    padding-top: 154px;
+    display: none;
+}
+.error .content {
+    width: 200px;
+    min-height: 110px;
+    margin: 0 auto;
+    padding-left: 117px;
+    background: url(../images/error.png) left center no-repeat;
+}
+.error .content p {
+    margin: 0;
+}
+.error .content .tip {
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.error .content span {
+    font-size: 14px;
+    color: #999;
+}
